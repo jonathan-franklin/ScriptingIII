@@ -341,8 +341,6 @@ polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0.000233769416
 // Result: polyExtrudeFace5 // 
 setAttr "polyExtrudeFace5.localTranslate" -type double3 0 0 2.433402 ;
 setAttr "polyExtrudeFace5.localTranslate" -type double3 0.321619 0 2.433402 ;
-select -d pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.f[40] pTorus5.f[98] pTorus5.f[156] pTorus5.f[174] pTorus5.f[178] pTorus5.f[182] ;
-select -d pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.f[40] pTorus5.f[98] pTorus5.f[156] pTorus5.f[174] pTorus5.f[178] pTorus5.f[182] ;
 select -r pTorus5.vtx[216:227] ;
 move -r -0.398763 0 -0.518621 ;
 select -d pTorus5.vtx[216:227] pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.f[40] pTorus5.f[98] pTorus5.f[156] pTorus5.f[174] pTorus5.f[178] pTorus5.f[182] ;
@@ -351,69 +349,66 @@ select -r pTorus1.f[13:16] pTorus1.f[35:36] pTorus1.f[55:56] pTorus1.f[73:76] pT
 select -add pTorus1.f[11] ;
 select -add pTorus1.f[11:15] pTorus1.f[31:33] pTorus1.f[51:53] pTorus1.f[71:74] pTorus1.f[92:96] pTorus1.f[112:116] pTorus1.f[144:149] pTorus1.f[151] pTorus1.f[153] ;
 select -add pTorus1.f[13:15] pTorus1.f[34] pTorus1.f[54] pTorus1.f[73:75] pTorus1.f[94:96] pTorus1.f[114:116] pTorus1.f[149:151] pTorus1.f[153] ;
+select -d pTorus1.f[117] pTorus1.f[155] pTorus1.f[97] pTorus1.f[154] ;
+select -add pTorus1.f[111] pTorus1.f[143] pTorus1.f[91] pTorus1.f[142] ;
 doDelete;
-select -r pTorus1.e[155] ;
-select -r pTorus1.e[223] ;
-select -tgl pTorus1.e[224] ;
-select -add pTorus1.e[68] pTorus1.e[83] pTorus1.e[98] pTorus1.e[113] pTorus1.e[155] pTorus1.e[222:224] ;
-select -d pTorus1.e[155] ;
-select -d pTorus1.e[98] ;
+
+select -r pTorus1.e[219] pTorus1.e[217] pTorus1.e[83] pTorus1.e[68] pTorus1.e[218] pTorus1.e[113] ;
 //performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
 // Result: polyBridgeEdge5 // 
-select -r pTorus1.e[221] ;
-select -tgl pTorus1.e[219] ;
-select -add pTorus1.e[67] pTorus1.e[82] pTorus1.e[97] pTorus1.e[112] pTorus1.e[153] pTorus1.e[217] pTorus1.e[219] pTorus1.e[221] ;
-select -tgl pTorus1.e[153] ;
-select -tgl pTorus1.e[97] ;
+
+select -r pTorus1.e[212] pTorus1.e[216] pTorus1.e[214] pTorus1.e[112] pTorus1.e[67] pTorus1.e[82] ;
 //performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
 // Result: polyBridgeEdge6 // 
 
-select -d pTorus1.e[67] pTorus1.e[82] pTorus1.e[112] pTorus1.e[217] pTorus1.e[219] pTorus1.e[221] ;
-select -d pTorus5.vtx[216:227] pTorus5.f[40] pTorus5.f[98] pTorus5.f[156] pTorus5.f[174] pTorus5.f[178] pTorus5.f[182] ;
-select -add pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] ;
 hilite -r pTorus5 ;
+
 // VERTICAL BARS
-select -r pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] ;
+select -r pTorus5.e[244] pTorus5.e[258] pTorus5.e[302] pTorus5.e[331] ;
 polySplitRing -ch on -splitType 1 -weight 0.0787673 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing30 // 
+
+select -r pTorus5.e[233] pTorus5.e[247] pTorus5.e[291] pTorus5.e[308] ;
 polySplitRing -ch on -splitType 1 -weight 0.0941079 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing31 // 
+
+select -r pTorus5.e[236] pTorus5.e[250] pTorus5.e[294] pTorus5.e[314] ;
 polySplitRing -ch on -splitType 1 -weight 0.0729165 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing32 // 
+
+select -r pTorus5.e[239] pTorus5.e[253] pTorus5.e[297] pTorus5.e[320] ;
 polySplitRing -ch on -splitType 1 -weight 0.0599179 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing33 // 
+
+select -r pTorus5.e[241] pTorus5.e[255] pTorus5.e[299] pTorus5.e[324] ;
 polySplitRing -ch on -splitType 1 -weight 0.925998 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing34 // 
-select -d pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.e[460:461] pTorus5.e[478] pTorus5.e[480] pTorus5.e[482:483] ;
-select -r pTorus5.f[240] ;
-select -tgl pTorus5.f[137] ;
-select -d pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.e[460:461] pTorus5.e[478] pTorus5.e[480] pTorus5.e[482:483] pTorus5.f[137] pTorus5.f[240] ;
-select -add pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.e[460:461] pTorus5.e[478] pTorus5.e[480] pTorus5.e[482:483] ;
+
 select -r pTorus5.e[475] ;
 select -add pTorus5.e[470] pTorus5.e[472] pTorus5.e[474:475] ;
 move -r -cs -ls -wd 0 0 -0.0542221 ;
 move -r -cs -ls -wd 0 0 0.0412321 ;
 select -d pTorus5.e[470] pTorus5.e[472] pTorus5.e[474:475] pTorus5.f[137] pTorus5.f[240] ;
 select -add pTorus5.f[137] pTorus5.f[240] ;
-select -r pTorus5.f[142] ;
-select -tgl pTorus5.f[131] ;
-select -tgl pTorus5.f[134] ;
-select -tgl pTorus5.f[137] ;
-select -tgl pTorus5.f[240] ;
-select -tgl pTorus5.f[175] ;
-select -tgl pTorus5.f[141] ;
-select -r pTorus5.f[131] pTorus5.f[134] pTorus5.f[137] pTorus5.f[141:142] pTorus5.f[175] pTorus5.f[240] ;
-polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0.0003907680511 -pvy 19.54073143 -pvz -0.6916666627 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus5.f[131] pTorus5.f[134] pTorus5.f[137] pTorus5.f[141:142] pTorus5.f[175] pTorus5.f[240];
+
+select -r pTorus5.f[131] pTorus5.f[134] pTorus5.f[137] pTorus5.f[141:142] pTorus5.f[176] pTorus5.f[240] ;
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0.0003907680511 -pvy 19.54073143 -pvz -0.6916666627 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus5.f[131] pTorus5.f[134] pTorus5.f[137] pTorus5.f[141:142] pTorus5.f[176] pTorus5.f[240];
 // Result: polyExtrudeFace6 // 
 setAttr "polyExtrudeFace6.localTranslate" -type double3 0 0 2.468282 ;
+
 // FLOOR RIM
 select -cl  ;
+
+select -r pTorus5.e[412:413] pTorus5.e[415] pTorus5.e[417] ;
 polySplitRing -ch on -splitType 1 -weight 0.912223 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing35 // 
+
+select -r pTorus5.e[420:421] pTorus5.e[423] pTorus5.e[425] ;
 polySplitRing -ch on -splitType 1 -weight 0.963212 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing36 // 
+
 select -r pTorus5.e[547] ;
 select -add pTorus5.e[542] pTorus5.e[544] pTorus5.e[546:547] ;
 select -r pTorus5.e[544] pTorus5.e[547] ;
@@ -448,7 +443,7 @@ setAttr "polyExtrudeFace8.localTranslate" -type double3 0 0 0.10088 ;
 select -r pTorus5.f[270] ;
 select -tgl pTorus5.f[277] ;
 select -r pTorus5.f[270] pTorus5.f[277] ;
-polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0.00139144063 -pvy 19.49040604 -pvz 0.5670010597 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus5.f[270] pTorus5.f[277];
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0.00139144063 -pvy 19.49040604 -pvz 0.5670010597 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus5.f[270] pTorus5.f[274];
 // Result: polyExtrudeFace9 // 
 setAttr "polyExtrudeFace9.localTranslate" -type double3 0 0 2.601834 ;
 select -cl  ;
@@ -584,6 +579,8 @@ hilite pTorus1.e[349:350] pTorus1.e[357:358] pTorus1.e[361:362] pTorus1.e[364] p
 selectMode -component ;
 select -r pTorus1.e[349:350] pTorus1.e[357:358] pTorus1.e[361:362] pTorus1.e[364] pTorus1.e[419] pTorus1.e[422] pTorus1.e[424:426] pTorus1.e[431] pTorus1.e[434:435] pTorus1.e[438] pTorus1.e[440:442] pTorus1.e[499:500] pTorus1.e[502:503] pTorus1.e[506] ;
 polySplitRing -ch on -splitType 1 -weight 0.191025 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+
+// EDGE LIP
 // Result: polySplitRing46 // 
 select -r pTorus1.f[14:27] pTorus1.f[125] pTorus1.f[133] pTorus1.f[141] pTorus1.f[144] pTorus1.f[157] pTorus1.f[165] pTorus1.f[173] ;
 polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -5.911089331e-07 -pvy 17.09916614 -pvz -0.6916668331 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus1.f[14:27] pTorus1.f[125] pTorus1.f[133] pTorus1.f[141] pTorus1.f[144] pTorus1.f[157] pTorus1.f[165] pTorus1.f[173];
@@ -597,12 +594,7 @@ select -cl  ;
 select -tgl pTorus1 ;
 polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pTorus5 pTorus5 pTorus1;
 // Result: pTorus6 polyUnite2 // 
-setAttr "pTorus6.rotateY" 45;
-setAttr "pTorus6.rotateY" 90;
-move -r -os -wd -0.798573 0 -0.569232 ;
-// Undo: move -r -os -wd -0.798573 0 -0.569232  // 
-// Undo: setAttr "pTorus6.rotateY" 90; // 
-// Undo: setAttr "pTorus6.rotateY" 45; // 
+
 select -cl  ;
 select -r pTorus6 ;
 move -r -os -wd 0 11.602499 0 ;
