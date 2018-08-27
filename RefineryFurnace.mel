@@ -42,9 +42,9 @@ hilite pCylinder1 ;
 selectMode -component ;
 
 select pCylinder1.e[40:59] ;
-
 polySplitRing -constructionHistory 1 -splitType 1 -weight 0.00146986 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // polySplitRing1 FIXED// 
+
 select -d pCylinder1.e[102] pCylinder1.e[104] pCylinder1.e[106] pCylinder1.e[108] pCylinder1.e[110] pCylinder1.e[112] pCylinder1.e[114] pCylinder1.e[116] pCylinder1.e[118] pCylinder1.e[120] pCylinder1.e[122] pCylinder1.e[124] pCylinder1.e[126] pCylinder1.e[128] pCylinder1.e[130] pCylinder1.e[132] pCylinder1.e[134] pCylinder1.e[136] pCylinder1.e[138:139] ;
 select -r pCylinder1.f[19] ;
 select -tgl pCylinder1.f[18] ;
@@ -53,14 +53,15 @@ select -r pCylinder1.f[0:19] ;
 polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.192092896e-07 -pvy 15.94708031 -pvz -1.788139343e-07 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCylinder1.f[0:19];
 // polyExtrudeFace1 // 
 setAttr "polyExtrudeFace1.localTranslate" -type double3 0 0 0.155366 ;
-select -cl  ;
+
 select -r pCylinder1.e[80:81] pCylinder1.e[83] pCylinder1.e[85] pCylinder1.e[87] pCylinder1.e[89] pCylinder1.e[91] pCylinder1.e[93] pCylinder1.e[95] pCylinder1.e[97] pCylinder1.e[99] pCylinder1.e[101] pCylinder1.e[103] pCylinder1.e[105] pCylinder1.e[107] pCylinder1.e[109] pCylinder1.e[111] pCylinder1.e[113] pCylinder1.e[115] pCylinder1.e[117] ;
 polySplitRing -ch on -splitType 1 -weight 0.0170632 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // polySplitRing2 // 
-select -cl ;
+
 select -r pCylinder1.e[220:221] pCylinder1.e[223] pCylinder1.e[225] pCylinder1.e[227] pCylinder1.e[229] pCylinder1.e[231] pCylinder1.e[233] pCylinder1.e[235] pCylinder1.e[237] pCylinder1.e[239] pCylinder1.e[241] pCylinder1.e[243] pCylinder1.e[245] pCylinder1.e[247] pCylinder1.e[249] pCylinder1.e[251] pCylinder1.e[253] pCylinder1.e[255] pCylinder1.e[257] ;
 polySplitRing -ch on -splitType 1 -weight 0.00227583 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // polySplitRing3 // 
+
 select -d pCylinder1.e[262] pCylinder1.e[264] pCylinder1.e[266] pCylinder1.e[268] pCylinder1.e[270] pCylinder1.e[272] pCylinder1.e[274] pCylinder1.e[276] pCylinder1.e[278] pCylinder1.e[280] pCylinder1.e[282] pCylinder1.e[284] pCylinder1.e[286] pCylinder1.e[288] pCylinder1.e[290] pCylinder1.e[292] pCylinder1.e[294] pCylinder1.e[296] pCylinder1.e[298:299] ;
 select -r pCylinder1.f[120] ;
 select -tgl pCylinder1.f[121] ;
@@ -77,47 +78,38 @@ select -r pCylinder1 ;
 hilite pCylinder1 ;
 selectMode -component ;
 
-select -cl ;
 select -r pCylinder1.e[240:241] pCylinder1.e[243] pCylinder1.e[245] pCylinder1.e[247] pCylinder1.e[249] pCylinder1.e[251] pCylinder1.e[253] pCylinder1.e[255] pCylinder1.e[257] pCylinder1.e[259] pCylinder1.e[261] pCylinder1.e[263] pCylinder1.e[265] pCylinder1.e[267] pCylinder1.e[269] pCylinder1.e[271] pCylinder1.e[273] pCylinder1.e[275] pCylinder1.e[277] ;
 polySplitRing -ch on -splitType 1 -weight 0.0716506 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing4 //
 
-select -cl ;
 select -r pCylinder1.e[380:381] pCylinder1.e[383] pCylinder1.e[385] pCylinder1.e[387] pCylinder1.e[389] pCylinder1.e[391] pCylinder1.e[393] pCylinder1.e[395] pCylinder1.e[397] pCylinder1.e[399] pCylinder1.e[401] pCylinder1.e[403] pCylinder1.e[405] pCylinder1.e[407] pCylinder1.e[409] pCylinder1.e[411] pCylinder1.e[413] pCylinder1.e[415] pCylinder1.e[417] ;
 polySplitRing -ch on -splitType 1 -weight 0.0986195 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing5 //
 
-select -cl ;
 select -r pCylinder1.e[420:421] pCylinder1.e[423] pCylinder1.e[425] pCylinder1.e[427] pCylinder1.e[429] pCylinder1.e[431] pCylinder1.e[433] pCylinder1.e[435] pCylinder1.e[437] pCylinder1.e[439] pCylinder1.e[441] pCylinder1.e[443] pCylinder1.e[445] pCylinder1.e[447] pCylinder1.e[449] pCylinder1.e[451] pCylinder1.e[453] pCylinder1.e[455] pCylinder1.e[457] ;
 polySplitRing -ch on -splitType 1 -weight 0.120679 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing6 // 
 
-select -cl ;
 select -r pCylinder1.e[460:461] pCylinder1.e[463] pCylinder1.e[465] pCylinder1.e[467] pCylinder1.e[469] pCylinder1.e[471] pCylinder1.e[473] pCylinder1.e[475] pCylinder1.e[477] pCylinder1.e[479] pCylinder1.e[481] pCylinder1.e[483] pCylinder1.e[485] pCylinder1.e[487] pCylinder1.e[489] pCylinder1.e[491] pCylinder1.e[493] pCylinder1.e[495] pCylinder1.e[497] ;
 polySplitRing -ch on -splitType 1 -weight 0.15199 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing7 // 
 
-select -cl ;
 select -r pCylinder1.e[500:501] pCylinder1.e[503] pCylinder1.e[505] pCylinder1.e[507] pCylinder1.e[509] pCylinder1.e[511] pCylinder1.e[513] pCylinder1.e[515] pCylinder1.e[517] pCylinder1.e[519] pCylinder1.e[521] pCylinder1.e[523] pCylinder1.e[525] pCylinder1.e[527] pCylinder1.e[529] pCylinder1.e[531] pCylinder1.e[533] pCylinder1.e[535] pCylinder1.e[537] ;
 polySplitRing -ch on -splitType 1 -weight 0.160993 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing8 // 
 
-select -cl ;
 select -r pCylinder1.e[540:541] pCylinder1.e[543] pCylinder1.e[545] pCylinder1.e[547] pCylinder1.e[549] pCylinder1.e[551] pCylinder1.e[553] pCylinder1.e[555] pCylinder1.e[557] pCylinder1.e[559] pCylinder1.e[561] pCylinder1.e[563] pCylinder1.e[565] pCylinder1.e[567] pCylinder1.e[569] pCylinder1.e[571] pCylinder1.e[573] pCylinder1.e[575] pCylinder1.e[577] ;
 polySplitRing -ch on -splitType 1 -weight 0.197801 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing9 // 
 
-select -cl ;
 select -r pCylinder1.e[580:581] pCylinder1.e[583] pCylinder1.e[585] pCylinder1.e[587] pCylinder1.e[589] pCylinder1.e[591] pCylinder1.e[593] pCylinder1.e[595] pCylinder1.e[597] pCylinder1.e[599] pCylinder1.e[601] pCylinder1.e[603] pCylinder1.e[605] pCylinder1.e[607] pCylinder1.e[609] pCylinder1.e[611] pCylinder1.e[613] pCylinder1.e[615] pCylinder1.e[617] ;
 polySplitRing -ch on -splitType 1 -weight 0.259368 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing10 // 
 
-select -cl ;
 select -r pCylinder1.e[620:621] pCylinder1.e[623] pCylinder1.e[625] pCylinder1.e[627] pCylinder1.e[629] pCylinder1.e[631] pCylinder1.e[633] pCylinder1.e[635] pCylinder1.e[637] pCylinder1.e[639] pCylinder1.e[641] pCylinder1.e[643] pCylinder1.e[645] pCylinder1.e[647] pCylinder1.e[649] pCylinder1.e[651] pCylinder1.e[653] pCylinder1.e[655] pCylinder1.e[657] ;
 polySplitRing -ch on -splitType 1 -weight 0.352163 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing11 // 
 
-select -cl ;
 select -r pCylinder1.e[660:661] pCylinder1.e[663] pCylinder1.e[665] pCylinder1.e[667] pCylinder1.e[669] pCylinder1.e[671] pCylinder1.e[673] pCylinder1.e[675] pCylinder1.e[677] pCylinder1.e[679] pCylinder1.e[681] pCylinder1.e[683] pCylinder1.e[685] pCylinder1.e[687] pCylinder1.e[689] pCylinder1.e[691] pCylinder1.e[693] pCylinder1.e[695] pCylinder1.e[697] ;
 polySplitRing -ch on -splitType 1 -weight 0.552195 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing12 // 
@@ -126,47 +118,38 @@ select -d pCylinder1.e[702] pCylinder1.e[704] pCylinder1.e[706] pCylinder1.e[708
 select -r pCylinder1.vtx[20:39] pCylinder1.vtx[41] ;
 move -r 0 -0.190812 0 ;
 
-select -cl  ;
 select -r pCylinder1.e[380:381] pCylinder1.e[383] pCylinder1.e[385] pCylinder1.e[387] pCylinder1.e[389] pCylinder1.e[391] pCylinder1.e[393] pCylinder1.e[395] pCylinder1.e[397] pCylinder1.e[399] pCylinder1.e[401] pCylinder1.e[403] pCylinder1.e[405] pCylinder1.e[407] pCylinder1.e[409] pCylinder1.e[411] pCylinder1.e[413] pCylinder1.e[415] pCylinder1.e[417] ;
 polySplitRing -ch on -splitType 1 -weight 0.0232887 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing13 // 
 
-select -cl ;
 select -r pCylinder1.e[420:421] pCylinder1.e[423] pCylinder1.e[425] pCylinder1.e[427] pCylinder1.e[429] pCylinder1.e[431] pCylinder1.e[433] pCylinder1.e[435] pCylinder1.e[437] pCylinder1.e[439] pCylinder1.e[441] pCylinder1.e[443] pCylinder1.e[445] pCylinder1.e[447] pCylinder1.e[449] pCylinder1.e[451] pCylinder1.e[453] pCylinder1.e[455] pCylinder1.e[457] ;
 polySplitRing -ch on -splitType 1 -weight 0.0195272 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing14 // 
 
-select -cl ;
 select -r pCylinder1.e[460:461] pCylinder1.e[463] pCylinder1.e[465] pCylinder1.e[467] pCylinder1.e[469] pCylinder1.e[471] pCylinder1.e[473] pCylinder1.e[475] pCylinder1.e[477] pCylinder1.e[479] pCylinder1.e[481] pCylinder1.e[483] pCylinder1.e[485] pCylinder1.e[487] pCylinder1.e[489] pCylinder1.e[491] pCylinder1.e[493] pCylinder1.e[495] pCylinder1.e[497] ;
 polySplitRing -ch on -splitType 1 -weight 0.0193146 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing15 // 
 
-select -cl ;
 select -r pCylinder1.e[500:501] pCylinder1.e[503] pCylinder1.e[505] pCylinder1.e[507] pCylinder1.e[509] pCylinder1.e[511] pCylinder1.e[513] pCylinder1.e[515] pCylinder1.e[517] pCylinder1.e[519] pCylinder1.e[521] pCylinder1.e[523] pCylinder1.e[525] pCylinder1.e[527] pCylinder1.e[529] pCylinder1.e[531] pCylinder1.e[533] pCylinder1.e[535] pCylinder1.e[537] ;
 polySplitRing -ch on -splitType 1 -weight 0.0254089 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing16 // 
 
-select -cl ;
 select -r pCylinder1.e[860:861] pCylinder1.e[863] pCylinder1.e[865] pCylinder1.e[867] pCylinder1.e[869] pCylinder1.e[871] pCylinder1.e[873] pCylinder1.e[875] pCylinder1.e[877] pCylinder1.e[879] pCylinder1.e[881] pCylinder1.e[883] pCylinder1.e[885] pCylinder1.e[887] pCylinder1.e[889] pCylinder1.e[891] pCylinder1.e[893] pCylinder1.e[895] pCylinder1.e[897] ;
 polySplitRing -ch on -splitType 1 -weight 0.961671 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing17 // 
 
-select -cl ;
 select -r pCylinder1.e[540:541] pCylinder1.e[543] pCylinder1.e[545] pCylinder1.e[547] pCylinder1.e[549] pCylinder1.e[551] pCylinder1.e[553] pCylinder1.e[555] pCylinder1.e[557] pCylinder1.e[559] pCylinder1.e[561] pCylinder1.e[563] pCylinder1.e[565] pCylinder1.e[567] pCylinder1.e[569] pCylinder1.e[571] pCylinder1.e[573] pCylinder1.e[575] pCylinder1.e[577] ;
 polySplitRing -ch on -splitType 1 -weight 0.967086 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing18 // 
 
-select -cl ;
 select -r pCylinder1.e[580:581] pCylinder1.e[583] pCylinder1.e[585] pCylinder1.e[587] pCylinder1.e[589] pCylinder1.e[591] pCylinder1.e[593] pCylinder1.e[595] pCylinder1.e[597] pCylinder1.e[599] pCylinder1.e[601] pCylinder1.e[603] pCylinder1.e[605] pCylinder1.e[607] pCylinder1.e[609] pCylinder1.e[611] pCylinder1.e[613] pCylinder1.e[615] pCylinder1.e[617] ;
 polySplitRing -ch on -splitType 1 -weight 0.969131 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing19 // 
 
-select -cl ;
 select -r pCylinder1.e[620:621] pCylinder1.e[623] pCylinder1.e[625] pCylinder1.e[627] pCylinder1.e[629] pCylinder1.e[631] pCylinder1.e[633] pCylinder1.e[635] pCylinder1.e[637] pCylinder1.e[639] pCylinder1.e[641] pCylinder1.e[643] pCylinder1.e[645] pCylinder1.e[647] pCylinder1.e[649] pCylinder1.e[651] pCylinder1.e[653] pCylinder1.e[655] pCylinder1.e[657] ;
 polySplitRing -ch on -splitType 1 -weight 0.9641 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing20 // 
 
-select -cl  ;
 // Warning: Select an object that allows topology modification. // 
 select -r pCylinder1.e[660:661] pCylinder1.e[663] pCylinder1.e[665] pCylinder1.e[667] pCylinder1.e[669] pCylinder1.e[671] pCylinder1.e[673] pCylinder1.e[675] pCylinder1.e[677] pCylinder1.e[679] pCylinder1.e[681] pCylinder1.e[683] pCylinder1.e[685] pCylinder1.e[687] pCylinder1.e[689] pCylinder1.e[691] pCylinder1.e[693] pCylinder1.e[695] pCylinder1.e[697] ;
 polySplitRing -ch on -splitType 1 -weight 0.962088 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
@@ -212,10 +195,6 @@ select -add pTorus1.e[160:161] pTorus1.e[163] pTorus1.e[165] pTorus1.e[167] pTor
 polySplitRing -ch on -splitType 1 -weight 0.971119 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing23 // 
 
-select -d pTorus1.e[202] pTorus1.e[204] pTorus1.e[206] pTorus1.e[208] pTorus1.e[210] pTorus1.e[212] pTorus1.e[214] pTorus1.e[216] pTorus1.e[218] pTorus1.e[220] pTorus1.e[222] pTorus1.e[224] pTorus1.e[226] pTorus1.e[228] pTorus1.e[230] pTorus1.e[232] pTorus1.e[234] pTorus1.e[236] pTorus1.e[238:239] ;
-select -r pTorus1.f[82] ;
-select -tgl pTorus1.f[83] ;
-select -add pTorus1.f[80:99] ;
 select -r pTorus1.f[80:99] ;
 polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -4.433316998e-07 -pvy 16.87395216 -pvz -5.911089329e-07 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus1.f[80:99];
 // Result: polyExtrudeFace4 // 
@@ -456,139 +435,101 @@ hilite pTorus1 ;
 selectMode -component ;
 
 //GROUND HOLES
+select -r pTorus1.e[11] pTorus1.e[25] pTorus1.e[39] pTorus1.e[53] pTorus1.e[127] pTorus1.e[155] pTorus1.e[221] pTorus1.e[223] ;
 polySplitRing -ch on -splitType 1 -weight 0.0992279 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing37 // 
 
+select -r pTorus1.e[12] pTorus1.e[26] pTorus1.e[40] pTorus1.e[54] pTorus1.e[128] pTorus1.e[157] pTorus1.e[226] pTorus1.e[228] ;
 polySplitRing -ch on -splitType 1 -weight 0.0765884 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing38 // 
 
+select -r pTorus1.e[1] pTorus1.e[15] pTorus1.e[29] pTorus1.e[43] pTorus1.e[117] pTorus1.e[134] pTorus1.e[168] pTorus1.e[170] ;
 polySplitRing -ch on -splitType 1 -weight 0.098508 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing39 // 
 
+select -r pTorus1.e[4] pTorus1.e[18] pTorus1.e[32] pTorus1.e[46] pTorus1.e[120] pTorus1.e[140] pTorus1.e[183] pTorus1.e[185] ;
 polySplitRing -ch on -splitType 1 -weight 0.0804274 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing40 // 
 
+select -r pTorus1.e[7] pTorus1.e[21] pTorus1.e[35] pTorus1.e[49] pTorus1.e[123] pTorus1.e[146] pTorus1.e[198] pTorus1.e[200] ;
 polySplitRing -ch on -splitType 1 -weight 0.0700944 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing41 // 
 
+select -r pTorus1.e[9] pTorus1.e[23] pTorus1.e[37] pTorus1.e[51] pTorus1.e[125] pTorus1.e[150] pTorus1.e[208] pTorus1.e[210] ;
 polySplitRing -ch on -splitType 1 -weight 0.927976 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing42 // 
 
+select -r pTorus1.e[10] pTorus1.e[24] pTorus1.e[38] pTorus1.e[52] pTorus1.e[126] pTorus1.e[152] pTorus1.e[213] pTorus1.e[215] ;
 polySplitRing -ch on -splitType 1 -weight 0.918264 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing43 // 
 
-select -d pTorus1.e[56:70] pTorus1.e[163] pTorus1.e[166] pTorus1.e[171] pTorus1.e[176] pTorus1.e[181] pTorus1.e[186] pTorus1.e[191] pTorus1.e[196] pTorus1.e[201] pTorus1.e[206] pTorus1.e[211] pTorus1.e[216] pTorus1.e[221] pTorus1.e[224] pTorus1.e[229] pTorus1.e[238] pTorus1.e[246] pTorus1.e[254] pTorus1.e[262] pTorus1.e[270] pTorus1.e[278] pTorus1.e[292] pTorus1.e[299] pTorus1.e[302] pTorus1.e[310] pTorus1.e[318] pTorus1.e[326] pTorus1.e[334] pTorus1.e[342] ;
-select -add pTorus5.e[4] pTorus5.e[40] pTorus5.e[84] pTorus5.e[97] pTorus5.e[120] pTorus5.e[156] pTorus5.e[200] pTorus5.e[213] pTorus5.e[236] pTorus5.e[316] pTorus5.e[456:457] ;
-hilite -r pTorus5 ;
-select -r pTorus5.e[531] ;
-select -d pTorus5.e[531] ;
-select -add pTorus1.e[56:70] pTorus1.e[163] pTorus1.e[166] pTorus1.e[171] pTorus1.e[176] pTorus1.e[181] pTorus1.e[186] pTorus1.e[191] pTorus1.e[196] pTorus1.e[201] pTorus1.e[206] pTorus1.e[211] pTorus1.e[216] pTorus1.e[221] pTorus1.e[224] pTorus1.e[229] pTorus1.e[238] pTorus1.e[246] pTorus1.e[254] pTorus1.e[262] pTorus1.e[270] pTorus1.e[278] pTorus1.e[292] pTorus1.e[299] pTorus1.e[302] pTorus1.e[310] pTorus1.e[318] pTorus1.e[326] pTorus1.e[334] pTorus1.e[342] ;
-hilite -r pTorus1 ;
-select -d pTorus1.e[56:70] pTorus1.e[163] pTorus1.e[166] pTorus1.e[171] pTorus1.e[176] pTorus1.e[181] pTorus1.e[186] pTorus1.e[191] pTorus1.e[196] pTorus1.e[201] pTorus1.e[206] pTorus1.e[211] pTorus1.e[216] pTorus1.e[221] pTorus1.e[224] pTorus1.e[229] pTorus1.e[238] pTorus1.e[246] pTorus1.e[254] pTorus1.e[262] pTorus1.e[270] pTorus1.e[278] pTorus1.e[292] pTorus1.e[299] pTorus1.e[302] pTorus1.e[310] pTorus1.e[318] pTorus1.e[326] pTorus1.e[334] pTorus1.e[342] ;
-select -add pTorus1.e[56:70] pTorus1.e[163] pTorus1.e[166] pTorus1.e[171] pTorus1.e[176] pTorus1.e[181] pTorus1.e[186] pTorus1.e[191] pTorus1.e[196] pTorus1.e[201] pTorus1.e[206] pTorus1.e[211] pTorus1.e[216] pTorus1.e[221] pTorus1.e[224] pTorus1.e[229] pTorus1.e[238] pTorus1.e[246] pTorus1.e[254] pTorus1.e[262] pTorus1.e[270] pTorus1.e[278] pTorus1.e[292] pTorus1.e[299] pTorus1.e[302] pTorus1.e[310] pTorus1.e[318] pTorus1.e[326] pTorus1.e[334] pTorus1.e[342] ;
-hilite pTorus1 ;
-selectMode -component ;
 //PLATFORM RIMS
-select -cl  ;
+select -r pTorus1.e[56:70] pTorus1.e[163] pTorus1.e[166] pTorus1.e[171] pTorus1.e[176] pTorus1.e[181] pTorus1.e[186] pTorus1.e[191] pTorus1.e[196] pTorus1.e[201] pTorus1.e[206] pTorus1.e[211] pTorus1.e[216] pTorus1.e[219] pTorus1.e[224] pTorus1.e[229] pTorus1.e[244] pTorus1.e[251] pTorus1.e[260] pTorus1.e[267] pTorus1.e[276] pTorus1.e[283] pTorus1.e[292] pTorus1.e[299] pTorus1.e[308] pTorus1.e[315] pTorus1.e[324] pTorus1.e[331] pTorus1.e[340] pTorus1.e[347] ;
 polySplitRing -ch on -splitType 1 -weight 0.967709 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing44 // 
-select -d pTorus1.e[350] pTorus1.e[352] pTorus1.e[354] pTorus1.e[356] pTorus1.e[358] pTorus1.e[360] pTorus1.e[362] pTorus1.e[364] pTorus1.e[366] pTorus1.e[368] pTorus1.e[370] pTorus1.e[372] pTorus1.e[374] pTorus1.e[376] pTorus1.e[378] pTorus1.e[380] pTorus1.e[382] pTorus1.e[384] pTorus1.e[386] pTorus1.e[388] pTorus1.e[390] pTorus1.e[392] pTorus1.e[394] pTorus1.e[396] pTorus1.e[398] pTorus1.e[400] pTorus1.e[402] pTorus1.e[404] pTorus1.e[406] pTorus1.e[408] pTorus1.e[410] pTorus1.e[412] pTorus1.e[414] pTorus1.e[416] pTorus1.e[418] pTorus1.e[420] pTorus1.e[422] pTorus1.e[424] pTorus1.e[426] pTorus1.e[428] pTorus1.e[430] pTorus1.e[432] pTorus1.e[434:435] ;
 
+select -r pTorus1.e[56:70] pTorus1.e[244] pTorus1.e[260] pTorus1.e[276] pTorus1.e[292] pTorus1.e[308] pTorus1.e[324] pTorus1.e[340] pTorus1.e[351] pTorus1.e[359] pTorus1.e[367] pTorus1.e[373] pTorus1.e[377] pTorus1.e[381] pTorus1.e[385] pTorus1.e[389] pTorus1.e[391] pTorus1.e[395] pTorus1.e[397] pTorus1.e[399] pTorus1.e[403] pTorus1.e[405] pTorus1.e[407] pTorus1.e[411] pTorus1.e[413] pTorus1.e[415] pTorus1.e[419] pTorus1.e[423] pTorus1.e[427] pTorus1.e[431] ;
 polySplitRing -ch on -splitType 1 -weight 0.0374454 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing45 // 
-select -d pTorus1.e[438] pTorus1.e[440] pTorus1.e[442] pTorus1.e[444] pTorus1.e[446] pTorus1.e[448] pTorus1.e[450] pTorus1.e[452] pTorus1.e[454] pTorus1.e[456] pTorus1.e[458] pTorus1.e[460] pTorus1.e[462] pTorus1.e[464] pTorus1.e[466] pTorus1.e[468] pTorus1.e[470] pTorus1.e[472] pTorus1.e[474] pTorus1.e[476] pTorus1.e[478] pTorus1.e[480] pTorus1.e[482] pTorus1.e[484] pTorus1.e[486] pTorus1.e[488] pTorus1.e[490] pTorus1.e[492] pTorus1.e[494] pTorus1.e[496] pTorus1.e[498] pTorus1.e[500] pTorus1.e[502] pTorus1.e[504] pTorus1.e[506] pTorus1.e[508] pTorus1.e[510] pTorus1.e[512] pTorus1.e[514] pTorus1.e[516] pTorus1.e[518] pTorus1.e[520] pTorus1.e[522:523] ;
-select -r pTorus1.f[220] pTorus1.f[260] ;
-select -tgl pTorus1.f[222:224] pTorus1.f[256:258] ;
-select -tgl pTorus1.f[226:228] pTorus1.f[252:254] ;
-select -tgl pTorus1.f[230:232] pTorus1.f[248:250] ;
-select -tgl pTorus1.f[234:236] pTorus1.f[244:246] ;
-select -tgl pTorus1.f[238] pTorus1.f[242] ;
-select -r pTorus1.f[220] pTorus1.f[222:224] pTorus1.f[226:228] pTorus1.f[230:232] pTorus1.f[234:236] pTorus1.f[238] pTorus1.f[242] pTorus1.f[244:246] pTorus1.f[248:250] pTorus1.f[252:254] pTorus1.f[256:258] pTorus1.f[260] ;
 
-doDelete;
-select -r pTorus1.e[464] ;
-select -tgl pTorus1.e[462] ;
-select -add pTorus1.e[377] pTorus1.e[379:380] pTorus1.e[382] pTorus1.e[462] pTorus1.e[464:466] ;
-select -tgl pTorus1.e[482] ;
-select -tgl pTorus1.e[484] ;
-select -add pTorus1.e[395] pTorus1.e[398] pTorus1.e[400] pTorus1.e[402] pTorus1.e[481:484] ;
-performBridgeOrFill;
+select -r pTorus1.f[254] pTorus1.f[258] ;
+select -add pTorus1.f[218] pTorus1.f[250:252] pTorus1.f[260:261] ;
+select -add pTorus1.f[220:222] pTorus1.f[246:248] ;
+select -add pTorus1.f[224:226] pTorus1.f[242:244] ;
+select -add pTorus1.f[228:230] pTorus1.f[238:240] ;
+select -add pTorus1.f[232] pTorus1.f[236] ;
+doDelete;// Clear spaces between floor support beams.
+
+select -r pTorus1.e[411] pTorus1.e[414] pTorus1.e[494:495] ;
+select -add pTorus1.e[419] pTorus1.e[422] pTorus1.e[502:503] ;
+//performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
 // Result: polyBridgeEdge7 // 
-select -r pTorus1.e[469] ;
-select -tgl pTorus1.e[470] ;
-select -add pTorus1.e[383] pTorus1.e[386] pTorus1.e[469:470] ;
-select -r pTorus1.e[391] ;
-select -r pTorus1.e[469] ;
-select -tgl pTorus1.e[470] ;
-select -add pTorus1.e[383] pTorus1.e[386] pTorus1.e[469:470] ;
-select -tgl pTorus1.e[391] ;
-select -tgl pTorus1.e[478] ;
-select -add pTorus1.e[391] pTorus1.e[394] pTorus1.e[477:478] ;
-performBridgeOrFill;
+
+select -r pTorus1.e[350] pTorus1.e[423] pTorus1.e[426:429] pTorus1.e[506:507] ;
+select -add pTorus1.e[405] pTorus1.e[407:408] pTorus1.e[410] pTorus1.e[487] pTorus1.e[489:491] ;
+//performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
 // Result: polyBridgeEdge8 // 
-select -r pTorus1.e[458] ;
-select -tgl pTorus1.e[456] ;
-select -add pTorus1.e[371] pTorus1.e[373:374] pTorus1.e[376] pTorus1.e[454] pTorus1.e[456:458] ;
-select -tgl pTorus1.e[487] ;
-select -tgl pTorus1.e[488] ;
-select -add pTorus1.e[403] pTorus1.e[406] pTorus1.e[408] pTorus1.e[410] pTorus1.e[487:490] ;
-performBridgeOrFill;
+
+select -r pTorus1.e[351] pTorus1.e[354] pTorus1.e[356] pTorus1.e[358] pTorus1.e[432:435] ;
+select -add pTorus1.e[399] pTorus1.e[401:402] pTorus1.e[404] pTorus1.e[479] pTorus1.e[481:483] ;
+//performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
 // Result: polyBridgeEdge9 // 
-select -tgl pTorus1.e[450] ;
-select -tgl pTorus1.e[448] ;
-select -add pTorus1.e[365] pTorus1.e[367:368] pTorus1.e[370] pTorus1.e[446] pTorus1.e[448:450] ;
-select -r pTorus1.e[450] ;
-select -tgl pTorus1.e[448] ;
-select -add pTorus1.e[365] pTorus1.e[367:368] pTorus1.e[370] pTorus1.e[446] pTorus1.e[448:450] ;
-select -tgl pTorus1.e[493] ;
-select -tgl pTorus1.e[494] ;
-select -tgl pTorus1.e[493] ;
-select -tgl pTorus1.e[494] ;
-select -tgl pTorus1.e[493] ;
-select -tgl pTorus1.e[494] ;
-select -add pTorus1.e[411] pTorus1.e[414] pTorus1.e[416] pTorus1.e[418] pTorus1.e[493:496] ;
-performBridgeOrFill;
+
+select -r pTorus1.e[393] pTorus1.e[395:396] pTorus1.e[398] pTorus1.e[471] pTorus1.e[473:475] ;
+select -add pTorus1.e[359] pTorus1.e[362] pTorus1.e[364] pTorus1.e[366] pTorus1.e[438:441] ;
+//performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
-// Result: polyBridgeEdge10 // 
-select -r pTorus1.e[499] ;
-select -tgl pTorus1.e[500] ;
-select -add pTorus1.e[419] pTorus1.e[422] pTorus1.e[424:426] pTorus1.e[499:500] pTorus1.e[502] ;
-select -tgl pTorus1.e[442] ;
-select -tgl pTorus1.e[440] ;
-select -add pTorus1.e[361:362] pTorus1.e[364] pTorus1.e[435] pTorus1.e[438] pTorus1.e[440:442] ;
-performBridgeOrFill;
+// Result: polyBridgeEdge10 //
+ 
+select -r pTorus1.e[389:390] pTorus1.e[392] pTorus1.e[460] pTorus1.e[463] pTorus1.e[465:467] ;
+select -add pTorus1.e[367] pTorus1.e[370] pTorus1.e[372:374] pTorus1.e[444:445] pTorus1.e[447] ;
+//performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
 // Result: polyBridgeEdge11 // 
-select -tgl pTorus1.e[434] ;
-select -tgl pTorus1.e[431] ;
-select -add pTorus1.e[357:358] pTorus1.e[431] pTorus1.e[434] ;
-select -tgl pTorus1.e[506] ;
-select -tgl pTorus1.e[349] ;
-select -add pTorus1.e[349:350] pTorus1.e[503] pTorus1.e[506] ;
-performBridgeOrFill;
+
+select -r pTorus1.e[377:378] pTorus1.e[448] pTorus1.e[451] ;
+select -add pTorus1.e[385:386] pTorus1.e[456] pTorus1.e[459] ;
+//performBridgeOrFill;
 polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
-// Result: polyBridgeEdge12 // 
-select -d pTorus1.e[349:350] pTorus1.e[357:358] pTorus1.e[361:362] pTorus1.e[364] pTorus1.e[419] pTorus1.e[422] pTorus1.e[424:426] pTorus1.e[431] pTorus1.e[434:435] pTorus1.e[438] pTorus1.e[440:442] pTorus1.e[499:500] pTorus1.e[502:503] pTorus1.e[506] ;
-select -cl  ;
-select -r pTorus1 ;
-select -add pTorus1.e[349:350] pTorus1.e[357:358] pTorus1.e[361:362] pTorus1.e[364] pTorus1.e[419] pTorus1.e[422] pTorus1.e[424:426] pTorus1.e[431] pTorus1.e[434:435] pTorus1.e[438] pTorus1.e[440:442] pTorus1.e[499:500] pTorus1.e[502:503] pTorus1.e[506] ;
-hilite pTorus1.e[349:350] pTorus1.e[357:358] pTorus1.e[361:362] pTorus1.e[364] pTorus1.e[419] pTorus1.e[422] pTorus1.e[424:426] pTorus1.e[431] pTorus1.e[434:435] pTorus1.e[438] pTorus1.e[440:442] pTorus1.e[499:500] pTorus1.e[502:503] pTorus1.e[506] ;
-selectMode -component ;
-select -r pTorus1.e[349:350] pTorus1.e[357:358] pTorus1.e[361:362] pTorus1.e[364] pTorus1.e[419] pTorus1.e[422] pTorus1.e[424:426] pTorus1.e[431] pTorus1.e[434:435] pTorus1.e[438] pTorus1.e[440:442] pTorus1.e[499:500] pTorus1.e[502:503] pTorus1.e[506] ;
-polySplitRing -ch on -splitType 1 -weight 0.191025 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polyBridgeEdge12 //
 
 // EDGE LIP
+select -r pTorus1.e[71:85] pTorus1.e[159:160] pTorus1.e[167] pTorus1.e[172] pTorus1.e[177] pTorus1.e[182] pTorus1.e[187] pTorus1.e[192] pTorus1.e[197] pTorus1.e[202] pTorus1.e[207] pTorus1.e[212] pTorus1.e[217] pTorus1.e[220] pTorus1.e[225] pTorus1.e[246] pTorus1.e[250] pTorus1.e[262] pTorus1.e[266] pTorus1.e[278] pTorus1.e[282] pTorus1.e[294] pTorus1.e[298] pTorus1.e[310] pTorus1.e[314] pTorus1.e[326] pTorus1.e[330] pTorus1.e[342] pTorus1.e[346] ;
+polySplitRing -ch on -splitType 1 -weight 0.191025 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
 // Result: polySplitRing46 // 
-select -r pTorus1.f[14:27] pTorus1.f[125] pTorus1.f[133] pTorus1.f[141] pTorus1.f[144] pTorus1.f[157] pTorus1.f[165] pTorus1.f[173] ;
-polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -5.911089331e-07 -pvy 17.09916614 -pvz -0.6916668331 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus1.f[14:27] pTorus1.f[125] pTorus1.f[133] pTorus1.f[141] pTorus1.f[144] pTorus1.f[157] pTorus1.f[165] pTorus1.f[173];
+
+select -r pTorus1.f[25] pTorus1.f[124] pTorus1.f[26] pTorus1.f[132] pTorus1.f[27];
+select -add pTorus1.f[14] pTorus1.f[15] pTorus1.f[140] pTorus1.f[16] pTorus1.f[17];
+select -add pTorus1.f[18] pTorus1.f[148] pTorus1.f[19] pTorus1.f[20] pTorus1.f[21];
+select -add pTorus1.f[156] pTorus1.f[22] pTorus1.f[23] pTorus1.f[164] pTorus1.f[24] pTorus1.f[172];
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -5.911089331e-07 -pvy 17.09916614 -pvz -0.6916668331 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus1.f[156] pTorus1.f[22] pTorus1.f[23] pTorus1.f[164] pTorus1.f[24] pTorus1.f[172] pTorus1.f[25] pTorus1.f[124] pTorus1.f[26] pTorus1.f[132] pTorus1.f[27] pTorus1.f[14] pTorus1.f[15] pTorus1.f[140] pTorus1.f[16] pTorus1.f[17] pTorus1.f[18] pTorus1.f[148] pTorus1.f[19] pTorus1.f[20] pTorus1.f[21];
 // Result: polyExtrudeFace10 // 
 setAttr "polyExtrudeFace10.localTranslate" -type double3 0 0 0.0639496 ;
 setAttr "polyExtrudeFace10.localTranslate" -type double3 0 0 0.108961 ;
 setAttr "polyExtrudeFace10.localTranslate" -type double3 0 0 0.0875427 ;
-select -cl  ;
 select -cl  ;
 
 select -tgl pTorus1 ;
@@ -607,4 +548,949 @@ move -r -os -wd 0 0 -0.357743 ;
 move -r -os -wd 0 0 -0.295385 ;
 move -r -os -wd -0.084955 0 0 ;
 move -r -os -wd 0 0 -0.0677058 ;
+select -cl  ;
+select -r pCylinder2.vtx[0:19] pCylinder2.vtx[40] ;
+move -r 0 2.831619 0 ;
+
+select -r pCylinder2.e[40:59] ;
+polySplitRing -ch on -splitType 1 -weight 0.0174558 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing47 // 
+
+select -r pCylinder2.e[100:101] pCylinder2.e[103] pCylinder2.e[105] pCylinder2.e[107] pCylinder2.e[109] pCylinder2.e[111] pCylinder2.e[113] pCylinder2.e[115] pCylinder2.e[117] pCylinder2.e[119] pCylinder2.e[121] pCylinder2.e[123] pCylinder2.e[125] pCylinder2.e[127] pCylinder2.e[129] pCylinder2.e[131] pCylinder2.e[133] pCylinder2.e[135] pCylinder2.e[137] ;
+polySplitRing -ch on -splitType 1 -weight 0.980111 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing48 // 
+
+select -r pCylinder2.e[100:101] pCylinder2.e[103] pCylinder2.e[105] pCylinder2.e[107] pCylinder2.e[109] pCylinder2.e[111] pCylinder2.e[113] pCylinder2.e[115] pCylinder2.e[117] pCylinder2.e[119] pCylinder2.e[121] pCylinder2.e[123] pCylinder2.e[125] pCylinder2.e[127] pCylinder2.e[129] pCylinder2.e[131] pCylinder2.e[133] pCylinder2.e[135] pCylinder2.e[137] ;
+polySplitRing -ch on -splitType 1 -weight 0.203877 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing49 // 
+
+select -r pCylinder2.e[180:181] pCylinder2.e[183] pCylinder2.e[185] pCylinder2.e[187] pCylinder2.e[189] pCylinder2.e[191] pCylinder2.e[193] pCylinder2.e[195] pCylinder2.e[197] pCylinder2.e[199] pCylinder2.e[201] pCylinder2.e[203] pCylinder2.e[205] pCylinder2.e[207] pCylinder2.e[209] pCylinder2.e[211] pCylinder2.e[213] pCylinder2.e[215] pCylinder2.e[217] ;
+polySplitRing -ch on -splitType 1 -weight 0.274408 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing50 // 
+
+select -r pCylinder2.e[220:221] pCylinder2.e[223] pCylinder2.e[225] pCylinder2.e[227] pCylinder2.e[229] pCylinder2.e[231] pCylinder2.e[233] pCylinder2.e[235] pCylinder2.e[237] pCylinder2.e[239] pCylinder2.e[241] pCylinder2.e[243] pCylinder2.e[245] pCylinder2.e[247] pCylinder2.e[249] pCylinder2.e[251] pCylinder2.e[253] pCylinder2.e[255] pCylinder2.e[257] ;
+polySplitRing -ch on -splitType 1 -weight 0.394275 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing51 // 
+
+select -r pCylinder2.e[260:261] pCylinder2.e[263] pCylinder2.e[265] pCylinder2.e[267] pCylinder2.e[269] pCylinder2.e[271] pCylinder2.e[273] pCylinder2.e[275] pCylinder2.e[277] pCylinder2.e[279] pCylinder2.e[281] pCylinder2.e[283] pCylinder2.e[285] pCylinder2.e[287] pCylinder2.e[289] pCylinder2.e[291] pCylinder2.e[293] pCylinder2.e[295] pCylinder2.e[297] ;
+polySplitRing -ch on -splitType 1 -weight 0.628504 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing52 // 
+
+select -r pCylinder2.e[260:261] pCylinder2.e[263] pCylinder2.e[265] pCylinder2.e[267] pCylinder2.e[269] pCylinder2.e[271] pCylinder2.e[273] pCylinder2.e[275] pCylinder2.e[277] pCylinder2.e[279] pCylinder2.e[281] pCylinder2.e[283] pCylinder2.e[285] pCylinder2.e[287] pCylinder2.e[289] pCylinder2.e[291] pCylinder2.e[293] pCylinder2.e[295] pCylinder2.e[297] ;
+polySplitRing -ch on -splitType 1 -weight 0.931489 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing53 // 
+
+select -r pCylinder2.e[220:221] pCylinder2.e[223] pCylinder2.e[225] pCylinder2.e[227] pCylinder2.e[229] pCylinder2.e[231] pCylinder2.e[233] pCylinder2.e[235] pCylinder2.e[237] pCylinder2.e[239] pCylinder2.e[241] pCylinder2.e[243] pCylinder2.e[245] pCylinder2.e[247] pCylinder2.e[249] pCylinder2.e[251] pCylinder2.e[253] pCylinder2.e[255] pCylinder2.e[257] ;
+polySplitRing -ch on -splitType 1 -weight 0.925024 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing54 // 
+
+select -r pCylinder2.e[180:181] pCylinder2.e[183] pCylinder2.e[185] pCylinder2.e[187] pCylinder2.e[189] pCylinder2.e[191] pCylinder2.e[193] pCylinder2.e[195] pCylinder2.e[197] pCylinder2.e[199] pCylinder2.e[201] pCylinder2.e[203] pCylinder2.e[205] pCylinder2.e[207] pCylinder2.e[209] pCylinder2.e[211] pCylinder2.e[213] pCylinder2.e[215] pCylinder2.e[217] ;
+polySplitRing -ch on -splitType 1 -weight 0.929688 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing55 // 
+
+select -r pCylinder2.e[100:101] pCylinder2.e[103] pCylinder2.e[105] pCylinder2.e[107] pCylinder2.e[109] pCylinder2.e[111] pCylinder2.e[113] pCylinder2.e[115] pCylinder2.e[117] pCylinder2.e[119] pCylinder2.e[121] pCylinder2.e[123] pCylinder2.e[125] pCylinder2.e[127] pCylinder2.e[129] pCylinder2.e[131] pCylinder2.e[133] pCylinder2.e[135] pCylinder2.e[137] ;
+polySplitRing -ch on -splitType 1 -weight 0.928722 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing56 // 
+
+// Selecting extrusion rings on lower cylinder
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -4.375920819e-07 -pvy -1.599853558 -pvz -4.375920819e-07 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCylinder2.f[0:19] pCylinder2.f[80:99] pCylinder2.f[180:259];
+// Result: polyExtrudeFace11 // 
+setAttr "polyExtrudeFace11.localTranslate" -type double3 0 0 0.24 ;
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.192092896e-07 -pvy 15.91627945 -pvz -1.788139343e-07 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCylinder1.f[20:39];
+// Result: polyExtrudeFace12 // 
+setAttr "polyExtrudeFace12.localTranslate" -type double3 0 0 3.205536 ;
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.192092896e-07 -pvy 57.63222323 -pvz -1.788139343e-07 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCylinder1.f[40:59];
+// Result: polyExtrudeFace13 // 
+setAttr "polyExtrudeFace13.localScale" -type double3 0.633333 0.633333 0.633333 ;
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.192092896e-07 -pvy 57.63222323 -pvz -1.192092896e-07 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCylinder1.f[40:59];
+// Result: polyExtrudeFace14 // 
+setAttr "polyExtrudeFace14.localTranslate" -type double3 0 0 -44.304478 ;
+
+select -r pCube1.e[4:5] pCube1.e[8:9] ;
+polySplitRing -ch on -splitType 1 -weight 0.979123 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing57 // 
+
+select -r pCube1.e[4:5] pCube1.e[13] pCube1.e[15] ;
+polySplitRing -ch on -splitType 1 -weight 0.269201 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing58 // 
+
+select -r pCube1.e[13] pCube1.e[15] pCube1.e[20] pCube1.e[25] ;
+polySplitRing -ch on -splitType 1 -weight 0.403074 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing59 // 
+
+select -r pCube1.e[4:5] pCube1.e[21] pCube1.e[23] ;
+polySplitRing -ch on -splitType 1 -weight 0.080531 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing60 // 
+
+select -r pCube1.e[21] pCube1.e[23] pCube1.e[36] pCube1.e[41] ;
+polySplitRing -ch on -splitType 1 -weight 0.0716915 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing61 //
+
+select -r pCube1.e[0] pCube1.e[3:5] pCube1.e[10:11] pCube1.e[44:45] ;
+select -d pCube1.e[4:5] pCube1.e[44:45] ;
+move -r 0 -0.149641 0 ;
+
+select -r pCube1.e[4:5] pCube1.e[37] pCube1.e[39] ;
+polySplitRing -ch on -splitType 1 -weight 0.857673 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing62 // 
+
+select -r pCube1.e[13] pCube1.e[15] pCube1.e[29] pCube1.e[31] ;
+polySplitRing -ch on -splitType 1 -weight 0.922353 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing63 // 
+
+select -r pCube1.e[38] pCube1.e[40] pCube1.e[42:43] ;
+move -r 0 0.0636538 0 ;
+
+select -r pCube1.e[6:7] pCube1.e[10:11] pCube1.e[14] pCube1.e[18] pCube1.e[22] pCube1.e[26] pCube1.e[30] pCube1.e[34] pCube1.e[38] pCube1.e[42] pCube1.e[46] pCube1.e[50] pCube1.e[54] pCube1.e[58] pCube1.e[62] pCube1.e[66] ;
+polySplitRing -ch on -splitType 1 -weight 0.0178873 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing64 // 
+
+select -r pCube1.e[10:11] pCube1.e[18] pCube1.e[26] pCube1.e[30] pCube1.e[42] pCube1.e[46] pCube1.e[58] pCube1.e[62] pCube1.e[68:69] pCube1.e[75] pCube1.e[79] pCube1.e[81] pCube1.e[91] pCube1.e[95] pCube1.e[97] pCube1.e[101] ;
+polySplitRing -ch on -splitType 1 -weight 0.018304 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing65 // 
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.294851521 -pvz 0 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[4:10] pCube1.f[12] pCube1.f[14] pCube1.f[16] pCube1.f[18] pCube1.f[20] pCube1.f[22] pCube1.f[24] pCube1.f[26:30] pCube1.f[32] pCube1.f[34:41] pCube1.f[43:50] pCube1.f[53] pCube1.f[55] pCube1.f[57] pCube1.f[59] pCube1.f[61] pCube1.f[63] pCube1.f[65] pCube1.f[67];
+// Result: polyExtrudeFace15 // 
+setAttr "polyExtrudeFace15.localTranslate" -type double3 0 0 3 ;
+// Undo:  // 
+setAttr "polyExtrudeFace15.localTranslate" -type double3 0 0 1 ;
+setAttr "polyExtrudeFace15.keepFacesTogether" 0;
+setAttr "polyExtrudeFace15.localTranslate" -type double3 0 0 .2 ;
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.419889163 -pvz 0 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[79] pCube1.f[89] pCube1.f[127] pCube1.f[137] pCube1.f[153] pCube1.f[177] pCube1.f[188] pCube1.f[212];
+// Result: polyExtrudeFace16 // 
+setAttr "polyExtrudeFace16.localTranslate" -type double3 0 0 0.202222 ;
+setAttr "polyExtrudeFace16.localTranslate" -type double3 0 0 0.199934 ;
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.294851521 -pvz 0 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[4:6] pCube1.f[8] pCube1.f[10] pCube1.f[12] pCube1.f[14] pCube1.f[16] pCube1.f[18] pCube1.f[20] pCube1.f[22] pCube1.f[24] pCube1.f[26] pCube1.f[28] pCube1.f[30] pCube1.f[32] pCube1.f[34:41] pCube1.f[43:50];
+// Result: polyExtrudeFace17 // 
+setAttr "polyExtrudeFace17.localTranslate" -type double3 0 0 0.177059 ;
+setAttr "polyExtrudeFace17.localTranslate" -type double3 0 0 0.136135 ;
+select -r pCube1.f[4:6] pCube1.f[8] pCube1.f[10] pCube1.f[12] pCube1.f[14] pCube1.f[16] pCube1.f[18] pCube1.f[20] pCube1.f[22] pCube1.f[24] pCube1.f[26] pCube1.f[28] pCube1.f[30] pCube1.f[32] pCube1.f[34:41] pCube1.f[43:50] ;
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.294851521 -pvz 0 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[4:6] pCube1.f[8] pCube1.f[10] pCube1.f[12] pCube1.f[14] pCube1.f[16] pCube1.f[18] pCube1.f[20] pCube1.f[22] pCube1.f[24] pCube1.f[26] pCube1.f[28] pCube1.f[30] pCube1.f[32] pCube1.f[34:41] pCube1.f[43:50];
+// Result: polyExtrudeFace18 // 
+setAttr "polyExtrudeFace18.localTranslate" -type double3 0 0 0.0648862 ;
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.294851521 -pvz 0 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[407] pCube1.f[409] pCube1.f[411] pCube1.f[413] pCube1.f[415] pCube1.f[417] pCube1.f[419] pCube1.f[421] pCube1.f[423] pCube1.f[425] pCube1.f[427] pCube1.f[429] pCube1.f[431] pCube1.f[433] pCube1.f[435] pCube1.f[437] pCube1.f[439] pCube1.f[441] pCube1.f[443] pCube1.f[445] pCube1.f[447] pCube1.f[449] pCube1.f[451] pCube1.f[453] pCube1.f[455] pCube1.f[457] pCube1.f[459] pCube1.f[461] pCube1.f[463] pCube1.f[465] pCube1.f[467] pCube1.f[469] pCube1.f[471] pCube1.f[473] pCube1.f[475] pCube1.f[477] pCube1.f[479] pCube1.f[481] pCube1.f[483] pCube1.f[485] pCube1.f[487] pCube1.f[489] pCube1.f[491] pCube1.f[493] pCube1.f[495] pCube1.f[497] pCube1.f[499] pCube1.f[501:502] pCube1.f[504] pCube1.f[506] pCube1.f[508] pCube1.f[510] pCube1.f[512] pCube1.f[514] pCube1.f[516] pCube1.f[518] pCube1.f[520] pCube1.f[522] pCube1.f[524] pCube1.f[526] pCube1.f[528] pCube1.f[530] pCube1.f[532];
+// Result: polyExtrudeFace19 // 
+setAttr "polyExtrudeFace19.localTranslate" -type double3 0 0 0.122401 ;
+setAttr "polyExtrudeFace19.localTranslate" -type double3 0 0 0.141164 ;
+
+select -r pCube1.e[68:69] pCube1.e[75] pCube1.e[79] pCube1.e[81] pCube1.e[91] pCube1.e[95] pCube1.e[97] pCube1.e[101] pCube1.e[104] pCube1.e[109] pCube1.e[113] pCube1.e[115] pCube1.e[123] pCube1.e[129] pCube1.e[133] pCube1.e[135] pCube1.e[137] pCube1.e[432] pCube1.e[435] pCube1.e[440] pCube1.e[443] pCube1.e[448] pCube1.e[451] pCube1.e[456] pCube1.e[459] pCube1.e[464] pCube1.e[467] pCube1.e[472] pCube1.e[475] pCube1.e[480] pCube1.e[483] pCube1.e[488] pCube1.e[491] ;
+polySplitRing -ch on -splitType 1 -weight 0.488991 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing66 // 
+
+select -r pCube1.e[104] pCube1.e[109] pCube1.e[113] pCube1.e[115] pCube1.e[123] pCube1.e[129] pCube1.e[133] pCube1.e[135] pCube1.e[137] pCube1.e[440] pCube1.e[448] pCube1.e[451] pCube1.e[464] pCube1.e[483] pCube1.e[488] pCube1.e[491] pCube1.e[1580:1581] pCube1.e[1583] pCube1.e[1585] pCube1.e[1595] pCube1.e[1597] pCube1.e[1603] pCube1.e[1605] pCube1.e[1607] pCube1.e[1609] pCube1.e[1623] pCube1.e[1625] pCube1.e[1631] pCube1.e[1633] pCube1.e[1635] pCube1.e[1637] pCube1.e[1643] pCube1.e[1645] ;
+polySplitRing -ch on -splitType 1 -weight 0.9564405 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing67 // 
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.402666863 -pvz -0.0004754601106 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[828] pCube1.f[836] pCube1.f[844] pCube1.f[852];
+// Result: polyExtrudeFace20 // 
+setAttr "polyExtrudeFace20.localTranslate" -type double3 0 0 0.143473 ;
+
+select -r pCube1.e[68:69] pCube1.e[75] pCube1.e[79] pCube1.e[81] pCube1.e[91] pCube1.e[95] pCube1.e[97] pCube1.e[101] pCube1.e[432] pCube1.e[435] pCube1.e[443] pCube1.e[456] pCube1.e[459] pCube1.e[467] pCube1.e[472] pCube1.e[475] pCube1.e[480] pCube1.e[1587] pCube1.e[1589] pCube1.e[1591] pCube1.e[1593] pCube1.e[1599] pCube1.e[1601] pCube1.e[1611] pCube1.e[1613] pCube1.e[1615] pCube1.e[1617] pCube1.e[1619] pCube1.e[1621] pCube1.e[1627] pCube1.e[1629] pCube1.e[1639] pCube1.e[1641] ;
+polySplitRing -ch on -splitType 1 -weight 0.67678 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing68 // 
+
+select -r pCube1.e[68:69] pCube1.e[75] pCube1.e[79] pCube1.e[81] pCube1.e[91] pCube1.e[95] pCube1.e[97] pCube1.e[101] pCube1.e[432] pCube1.e[435] pCube1.e[443] pCube1.e[456] pCube1.e[459] pCube1.e[467] pCube1.e[472] pCube1.e[475] pCube1.e[480] pCube1.e[1755] pCube1.e[1757] pCube1.e[1759] pCube1.e[1761] pCube1.e[1767] pCube1.e[1769] pCube1.e[1779] pCube1.e[1781] pCube1.e[1783] pCube1.e[1785] pCube1.e[1787] pCube1.e[1789] pCube1.e[1795] pCube1.e[1797] pCube1.e[1807] pCube1.e[1809] ;
+polySplitRing -ch on -splitType 1 -weight 0.931342 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing69 // 
+
+select -r pCube1.e[104] pCube1.e[109] pCube1.e[113] pCube1.e[115] pCube1.e[123] pCube1.e[129] pCube1.e[133] pCube1.e[135] pCube1.e[137] pCube1.e[440] pCube1.e[448] pCube1.e[451] pCube1.e[464] pCube1.e[483] pCube1.e[488] pCube1.e[491] pCube1.e[1649] pCube1.e[1651] pCube1.e[1653] pCube1.e[1655] pCube1.e[1661] pCube1.e[1663] pCube1.e[1673] pCube1.e[1675] pCube1.e[1677] pCube1.e[1679] pCube1.e[1681] pCube1.e[1683] pCube1.e[1689] pCube1.e[1691] pCube1.e[1693] pCube1.e[1695] pCube1.e[1701] pCube1.e[1703] ;
+polySplitRing -ch on -splitType 1 -weight 0.657602 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing70 // 
+
+select -r pCube1.e[104] pCube1.e[109] pCube1.e[113] pCube1.e[115] pCube1.e[123] pCube1.e[129] pCube1.e[133] pCube1.e[135] pCube1.e[137] pCube1.e[440] pCube1.e[448] pCube1.e[451] pCube1.e[464] pCube1.e[483] pCube1.e[488] pCube1.e[491] pCube1.e[1885] pCube1.e[1887] pCube1.e[1889] pCube1.e[1891] pCube1.e[1897] pCube1.e[1899] pCube1.e[1909] pCube1.e[1911] pCube1.e[1913] pCube1.e[1915] pCube1.e[1917] pCube1.e[1919] pCube1.e[1925] pCube1.e[1927] pCube1.e[1929] pCube1.e[1931] pCube1.e[1937] pCube1.e[1939] ;
+polySplitRing -ch on -splitType 1 -weight 0.9214755 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing71 // 
+
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx 0 -pvy 9.216841019 -pvz -0.03823925741 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube1.f[915] pCube1.f[933] pCube1.f[984] pCube1.f[1000];
+// Result: polyExtrudeFace21 // 
+setAttr "polyExtrudeFace21.localTranslate" -type double3 0 0 0.145794 ;
+
+select -r pCylinder1.vtx[904:906] ;
+select -tgl pCylinder1.vtx[914:916] ;
+scale -r -p 0cm 12.710744cm -1.78814e-07cm 1 1 3.627966 ;
+select -r pCylinder1.vtx[914:916] ;
+scale -r -p -4.47035e-08cm 12.710744cm 3.539165cm 1 1 1e-05 ;
+select -r pCylinder1.vtx[904:906] ;
+scale -r -p 0cm 12.710744cm -3.539165cm 1 1 1e-05 ;
+select -r pCylinder1.vtx[900:901] pCylinder1.vtx[903] pCylinder1.vtx[917:920] pCylinder1.vtx[941] pCylinder1.vtx[959:961] ;
+scale -r -p 0.793893cm 13.019247cm -4.35114e-06cm 1e-05 1 1 ;
+select -r pCylinder1.vtx[907:913] ;
+scale -r -p -0.793893cm 12.710744cm 3.93391e-06cm 1e-05 1 1 ;
+select -tgl pCylinder1.vtx[900:901] pCylinder1.vtx[903] pCylinder1.vtx[917:920] ;
+scale -r -p -8.9407e-08cm 12.710744cm -1.78814e-07cm 1.498006 1 1 ;
+scale -r -p -8.9407e-08cm 12.710744cm -1.78814e-07cm 1 1 4.341836 ;
+scale -r -p -8.9407e-08cm 12.710744cm -1.78814e-07cm 1 1 1.012142 ;
+scale -r -p -8.9407e-08cm 12.710744cm -1.78814e-07cm 1 1 0.994215 ;
+select -r pCylinder1.vtx[903:907] ;
+select -tgl pCylinder1.vtx[913:917] ;
+scale -r -p -1.19209e-07cm 12.710744cm 2.38419e-07cm 1 1 1.005031 ;
+scale -r -p -1.19209e-07cm 12.710744cm 2.38419e-07cm 1 1 0.989875 ;
+
+polyTorus -r 1 -sr 0.5 -tw 0 -sx 20 -sy 20 -ax 0 1 0 -cuv 1 -ch 1;
+// Result: pTorus8 polyTorus2 // 
+setAttr "polyTorus2.twist" 45;
+setAttr "polyTorus2.subdivisionsHeight" 4;
+move -r 0 25.633052 0 ;
+move -r 0 0 2.543406 ;
+setAttr "polyTorus2.sectionRadius" .02;
+scale -r 1 4.941052 1 ;
+scale -r 1 0.685973 1 ;
+scale -r 1 1.063681 1 ;
+
+select -r pTorus8.f[0:8] pTorus8.f[19:28] pTorus8.f[39:48] pTorus8.f[59:68] pTorus8.f[79] ;
+doDelete;
+
+select -r pTorus8.e[83] pTorus8.e[61] ;
+//performBridgeOrFill;
+polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
+// Result: polyBridgeEdge12 // 
+
+select -r pTorus8.e[73] pTorus8.e[51] ;
+//performBridgeOrFill;
+polyBridgeEdge -ch 1 -divisions 0 -twist 0 -taper 1 -curveType 0 -smoothingAngle 30 -direction 0 -sourceDirection 0 -targetDirection 0;
+// Result: polyBridgeEdge12 // 
+
+select -r pTorus8.f[40:41] ;
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.192092896e-07 -pvy 25.63305372 -pvz 2.543406 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pTorus8.f[40:41];
+// Result: polyExtrudeFace22 // 
+setAttr "polyExtrudeFace22.localTranslate" -type double3 0 0 0.551157 ;
+setAttr "polyExtrudeFace22.localTranslate" -type double3 0 0 0.930985 ;
+select -d pTorus8.f[40:41] ;
+scale -r 0.882442 0.882442 0.882442 ;
+scale -r 0.934775 0.934775 0.934775 ;
+scale -r 1.014781 1.014781 1.014781 ;
+
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+move -r 0 24.354734 0 ;
+move -r 0 0 3.395366 ;
+scale -r 0.162567 1 1 ;
+scale -r 1 1 0.305867 ;
+scale -r 0.276533 1 1 ;
+scale -r 1 1 0.398135 ;
+move -r 0.943409 0 0 ;
+move -r 0 0 -1.560945 ;
+move -r 0 0.805447 0 ;
+scale -r 0.541205 1 1 ;
+move -r 0.0480169 0 0 ;
+move -r 0 0 2.72194e-05 ;
+scale -r 1 1 0.843371 ;
+scale -r 1 1.087322 1 ;
+move -r 0 -0.101682 0 ;
+move -r 0 -0.578983 0 ;
+scale -r 1 1.818889 1 ;
+move -r 0 0.202665 0 ;
+scale -r 1 1.066245 1 ;
+move -r 0 -0.105551 0 ;
+scale -r 1 1.032671 1 ;
+move -r 0 0.000348856 0 ;
+
+duplicate -rr;
+// Result: pCube3 //
+move -r -1.968569 0 0 ;
+hilite -r pCube2 ;
+move -r -0.0135643 0 0 ;
+select -r pCube3 ;
+move -r 0.0122501 0 0 ;
+duplicate -rr;
+// Result: pCube4 //
+move -r 0 0 0.590057 ;
+duplicate -rr;
+// Result: pCube5 //
+move -r 1.955464 0 0 ;
+select -tgl pCube4 ;
+move -r 0 0 0.199481 ;
+
+select -r pCube5 ;
+select -tgl pCube4 ;
+duplicate -rr;
+// Result: pCube6 pCube7 //
+move -r 0 0 0.767383 ;
+select -r pCube6 ;
+move -r -0.497309 0 0 ;
+select -r pCube7 ;
+move -r 0.498116 0 0 ;
+move -r -0.162925 0 0 ;
+select -r pCube6 ;
+move -r 0.153574 0 0 ;
+select -r pCube7 ;
+move -r 0.00408365 0 0 ;
+select -r pCube6 ;
+select -tgl pCube7 ;
+move -r 0 0 -0.109919 ;
+select -r pCube7 ;
+rotate -r -os -fo 0 44.491903 0 ;
+select -r pCube6 ;
+rotate -r -os -fo 0 -43.379336 0 ;
+select -r pCube6 ;
+duplicate -rr;
+// Result: pCube8 //
+move -r -0.773468 0 0 ;
+move -r 0.127277 0 0 ;
+move -r 0 0 0.214362 ;
+rotate -r -os -fo 0 -47.128293 0 ;
+setAttr "pCube8.rotateY" -90;
+move -r 0 0 0.0161835 ;
+move -r 0.00897227 0 0 ;
+select -r pCube7 pCube6 pCube8 pCube3 pCube2 pCube5 pCube4 ;
+scale -r 1 1 0.893387 ;
+select -r pTorus8 pCube7 pCube6 pCube8 pCube3 pCube2 pCube5 pCube4 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pTorus8 pTorus8 pCube7 pCube6 pCube8 pCube3 pCube2 pCube5 pCube4;
+// Result: pTorus9 polyUnite3 // 
+select -r pTorus9 ;
+scale -r 0.841163 0.841163 0.841163 ;
+scale -r 0.926898 0.926898 0.926898 ;
+move -r 0 3.504314 0 ;
+duplicate -rr;
+// Result: pTorus10 //
+move -r 0 -1.690064 0 ;
+duplicate -rr;
+// Result: pTorus11 //
+move -r 0 -1.700644 0 ;
+duplicate -rr;
+// Result: pTorus12 //
+move -r 0 5.10138 0 ;
+select -r pTorus12.f[18] ;
+select -add pTorus12.f[0:49] ;
+select -tgl pTorus12.f[87] ;
+select -tgl pTorus12.f[69] ;
+select -tgl pTorus12.f[51] ;
+select -tgl pTorus12.f[63] ;
+select -tgl pTorus12.f[57] ;
+select -tgl pTorus12.f[81] ;
+select -tgl pTorus12.f[75] ;
+move -r 0 0.524442 0 ;
+scale -r -p -1.19209e-07cm 31.141811cm 2.584985cm 1.341767 1.341767 1.341767 ;
+select -d pTorus12.f[0:49] pTorus12.f[51] pTorus12.f[57] pTorus12.f[63] pTorus12.f[69] pTorus12.f[75] pTorus12.f[81] pTorus12.f[87] ;
+select -r pTorus12 ;
+duplicate -rr;
+// Result: pTorus13 //
+move -r 0 -7.291579 0 ;
+setAttr "pTorus13.rotateX" -4;
+setAttr "pTorus13.rotateX" 180;
+setAttr "pTorus13.rotateY" 180;
+move -r 0 0.486011 0 ;
+select -r pTorus11 ;
+select -r pTorus11.f[42] ;
+select -add pTorus11.f[0:49] ;
+ polySeparate -sss 0 -ch 1 pTorus11Shape;
+// Result: polySurface1 polySurface2 polySeparate1 // 
+select -r polySurface1 ;
+duplicate -rr;
+// Result: polySurface3 //
+move -r 0 -1.445983 0 ;
+move -r 0 -0.206102 0 ;
+select -r pTorus12 ;
+select -tgl pTorus9 ;
+duplicate -rr;
+// Result: pTorus14 pTorus15 //
+move -r 5.582553 0 0 ;
+select -r polySurface3 ;
+duplicate -rr;
+// Result: polySurface4 //
+move -r 6.653467 0 0 ;
+select -r pTorus12 ;
+select -tgl pTorus9 ;
+select -tgl pTorus10 ;
+select -tgl polySurface2 ;
+select -tgl pTorus13 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pTorus12 pTorus12 pTorus9 pTorus10 polySurface2 pTorus13;
+// Result: pTorus16 polyUnite4 // 
+select -r polySurface1 ;
+select -tgl polySurface3 ;
+select -tgl pTorus16 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface1 polySurface1 polySurface3 pTorus16;
+// Result: |polySurface1 polyUnite5 // 
+select -r |polySurface1 ;
+move -r 0 0 -0.771224 ;
+move -r -0.521529 0 0 ;
+rotate -r -os -fo 0 -52.81944 0 ;
+move -r -0.473686 0 0.299334 ;
+move -r 0 0.06412 0 ;
+select -cl  ;
+select -r pTorus15 ;
+duplicate -rr;
+// Result: pTorus17 //
+move -r 0 -1.675032 0 ;
+select -r polySurface4 ;
+move -r -1.807974 0 0 ;
+move -r 0.613151 0 0 ;
+move -r 0 1.647418 0 ;
+move -r 0.139715 0 0 ;
+move -r -0.00450016 0 0 ;
+move -r 0 0.0101953 0 ;
+move -r -0.013509 0 0 ;
+move -r 0 0.020223 0 ;
+select -r pTorus14 ;
+duplicate -rr;
+// Result: pTorus18 //
+move -r 0 -5.334925 0 ;
+setAttr "pTorus18.rotateX" -2;
+setAttr "pTorus18.rotateX" 180;
+setAttr "pTorus18.rotateY" 180;
+move -r 0 0.226684 0 ;
+move -r 0 -0.0169434 0 ;
+select -r polySurface4 pTorus15 pTorus14 pTorus18 pTorus17 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface4 polySurface4 pTorus15 pTorus14 pTorus18 pTorus17;
+// Result: |polySurface4 polyUnite6 // 
+select -r |polySurface4 ;
+move -r -1.250839 0 0 ;
+move -r 0 -10.934447 0 ;
+move -r -1.918317 0 -1.213675 ;
+move -r 0 -0.588814 0 ;
+rotate -r -os -fo 0 34.680971 0 ;
+move -r -0.136852 0 -0.129571 ;
+setAttr "|polySurface4.rotateY" 0;
+setAttr "|polySurface4.rotateY" 90;
+move -r 0 0 -0.636814 ;
+move -r 0 0 1.040778 ;
+move -r 0.79778 0 0 ;
+move -r -7.12853 0 0 ;
+setAttr "|polySurface4.rotateY" 270;
+move -r 0 0 1.143951 ;
+move -r 0.24532 0 0 ;
+move -r 0.599103 0 0 ;
+move -r 0 0 0.901506 ;
+move -r 0 0 0.585233 ;
+move -r 1.086643 0 0 ;
+
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+// Result: pCube9 polyCube3 // 
+move -r 0 7.020203 0 ;
+move -r -3.120065 0 0 ;
+scale -r 1 0.0663787 1 ;
+scale -r 2.292753 1 1 ;
+move -r 0.523539 0 0 ;
+move -r 0 -0.994733 0 ;
+scale -r 1 1 4.646526 ;
+scale -r 1 1 1.772253 ;
+move -r 0 0 0.729533 ;
+scale -r 1 1 1.209872 ;
+move -r 0 0 0.426259 ;
+scale -r 1 1 0.957635 ;
+move -r 0 0 -0.115435 ;
+move -r 0 0.030306 0 ;
+scale -r 1 0.497493 1 ;
+scale -r 1.064185 1 1 ;
+move -r -0.108395 0 0 ;
+select -cl  ;
+select -r pCube9 ;
+select -add pCube9.e[6:7] pCube9.e[10:11] ;
+select -r pCube9.e[6:7] pCube9.e[10:11] ;
+polySplitRing -ch on -splitType 1 -weight 0.214524 -smoothingAngle 30 -fixQuads 1 -insertWithEdgeFlow 0 ;
+// Result: polySplitRing72 // 
+select -d pCube9.e[14] pCube9.e[16] pCube9.e[18:19] ;
+select -r pCube9.f[4] ;
+select -r pCube9.f[4] ;
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.484965165 -pvy 6.055775976 -pvz 4.787467579 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube9.f[4];
+// Result: polyExtrudeFace23 // 
+// Undo: PolyExtrude // 
+select -r pCube9.f[4] ;
+polyExtrudeFacet -constructionHistory 1 -keepFacesTogether 1 -pvx -1.484965165 -pvy 6.055775976 -pvz 4.787467579 -divisions 1 -twist 0 -taper 1 -off 0 -thickness 0 -smoothingAngle 30 pCube9.f[4];
+// Result: polyExtrudeFace23 // 
+setAttr "polyExtrudeFace23.localTranslate" -type double3 0 0 2.593852 ;
+setAttr "polyExtrudeFace23.localTranslate" -type double3 0 0 2.678538 ;
+
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+// Result: pCube10 polyCube4 // 
+move -r 0 0 7.786902 ;
+move -r 0 7.793954 0 ;
+scale -r 1 1 0.0461619 ;
+scale -r 0.263135 1 1 ;
+scale -r 0.590142 1 1 ;
+scale -r 0.666207 1 1 ;
+move -r 0 0 -0.968163 ;
+move -r 0 0 -1.058545 ;
+move -r 0 -1.257158 0 ;
+scale -r 1 1.891988 1 ;
+move -r 0 0.444582 0 ;
+scale -r 1 1.043462 1 ;
+move -r 0 0.0558386 0 ;
+scale -r 1 1.192827 1 ;
+move -r 0 0.210223 0 ;
+move -r 1.130902 0 0 ;
+select -r pCube10 ;
+duplicate -rr;
+// Result: pCube11 //
+move -r -2.129634 0 0 ;
+move -r -0.556735 0 0 ;
+move -r -0.0462443 0 0 ;
+duplicate -rr;
+// Result: pCube12 //
+move -r -2.261131 0 0 ;
+select -r pCube11 ;
+move -r -0.263093 0 0 ;
+select -r pCube12 ;
+duplicate -rr;
+// Result: pCube13 //
+move -r 0 0 -9.46789 ;
+duplicate -rr;
+// Result: pCube14 //
+move -r 0 0 7.300171 ;
+move -r 0 0 0.259378 ;
+setAttr "pCube14.rotateY" 90;
+duplicate -rr;
+// Result: pCube15 //
+move -r 0 0 -1.848713 ;
+duplicate -rr;
+// Result: pCube16 //
+move -r 0 0 -1.966844 ;
+duplicate -rr;
+// Result: pCube17 //
+move -r 0 0 -2.111413 ;
+select -r pCube16 ;
+move -r 0 0 -0.186081 ;
+select -r pCube15 ;
+move -r 0 0 -0.130665 ;
+select -r pCube13 ;
+duplicate -rr;
+// Result: pCube18 //
+move -r 2.328301 0 0 ;
+
+duplicate -rr;
+// Result: pCube19 //
+move -r -1.139746 0 0 ;
+setAttr "pCube19.rotateZ" 90;
+move -r 0 1.108533 0 ;
+scale -r 1 1 1.352602 ;
+move -r 0 0 -0.0292887 ;
+move -r -0.0423589 0 0 ;
+select -r pCube19 ;
+scale -r 1 1.031167 1 ;
+move -r 0.00777495 0 0 ;
+duplicate -rr;
+// Result: pCube20 //
+move -r 0 0 3.547877 ;
+move -r -1.24085 0 0 ;
+setAttr "pCube20.rotateX" 90;
+move -r 0 0 1.044675 ;
+scale -r 1 3.898154 1 ;
+move -r 0 0 0.172998 ;
+move -r 0 0 -0.0553526 ;
+scale -r 1 1.007477 1 ;
+move -r 0 0 0.0283513 ;
+duplicate -rr;
+// Result: pCube21 //
+move -r 2.634519 0 0 ;
+move -r 0 0 4.849405 ;
+setAttr "pCube21.rotateX" 0;
+scale -r 1 0.556922 1 ;
+move -r 0 0 -0.0868539 ;
+scale -r 1 0.977513 1 ;
+move -r -0.0891831 0 0 ;
+scale -r 1 0.989213 1 ;
+scale -r 1 1.005332 1 ;
+scale -r 1 1 1 ;
+duplicate -rr;
+// Result: pCube22 //
+move -r 0 0 -0.960498 ;
+setAttr "pCube22.rotateX" 90;
+move -r 2.571308 0 0 ;
+scale -r 1 0.45485 1 ;
+move -r 0 0 -0.284666 ;
+scale -r 1 1.086222 1 ;
+select -cl  ;
+select -r pCube22 ;
+select -tgl pCube21 ;
+select -tgl pCube20 ;
+select -tgl pCube19 ;
+move -r 0 0.0475037 0 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCube22 pCube22 pCube21 pCube20 pCube19;
+// Result: pCube23 polyUnite7 // 
+duplicate -rr;
+// Result: pCube24 //
+move -r 0 -0.994946 0 ;
+duplicate -rr;
+// Result: pCube25 //
+move -r 0 -1.037363 0 ;
+
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+// Result: pCube26 polyCube5 // 
+move -r 0 30.738432 0 ;
+move -r 0 0 2.04365 ;
+scale -r 0.0782908 1 1 ;
+scale -r 1 0.570401 1 ;
+scale -r 1 0.266167 1 ;
+move -r 0 0.46552 0 ;
+move -r 0.331807 0 0 ;
+move -r 0 0 -0.422342 ;
+move -r 0.07894 0 0 ;
+rotate -r -os -fo 0 16.89508 0 ;
+move -r -0.150382 0 -0.0534937 ;
+scale -r 1 1 1.56007 ;
+scale -r 0.744479 1 1 ;
+move -r -0.00997074 -0.0309083 0 ;
+// Undo: move -r -0.00997074 -0.0309083 0  // 
+rotate -r -os -fo 0 -5.577056 0 ;
+move -r 0.0264538 0 0 ;
+move -r 0.0129921 0 0.0253666 ;
+duplicate -rr;
+// Result: pCube27 //
+move -r 0 -9.40486 0 ;
+move -r 0 -0.0843309 0 ;
+
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+// Result: pCube28 polyCube6 // 
+move -r 0 27.242415 0 ;
+move -r 0 0 2.218497 ;
+scale -r 0.106304 1 0.106304 ;
+scale -r 1 1 0.297847 ;
+scale -r 1 1.363514 1 ;
+move -r 0 0.853633 0 ;
+scale -r 1 1.224856 1 ;
+move -r 0 0.0824811 0 ;
+scale -r 1 1.034028 1 ;
+scale -r 1 0.988657 1 ;
+move -r 0 -0.0138552 0 ;
+duplicate -rr;
+// Result: pCube29 //
+move -r 0 0 -1.251333 ;
+select -add pCube28 ;
+move -r 0 0 0.115621 ;
+move -r 0 0 1.896861 ;
+polyCylinder -r 1 -h 2 -sx 20 -sy 1 -sz 1 -ax 0 1 0 -rcp 0 -cuv 3 -ch 1;
+// Result: pCylinder3 polyCylinder3 // 
+select -addFirst polyCylinder3 ;
+setAttr "polyCylinder3.subdivisionsAxis" 6;
+move -r 0 28.145868 0 ;
+move -r 0 0 3.605183 ;
+setAttr "pCylinder3.rotateX" 90;
+scale -r 0.225403 0.225403 0.225403 ;
+select -r pCylinder3.e[12:17] ;
+polySoftEdge -a 180 -ch 1 pCylinder3.e[12:17];
+// Result: polySoftEdge1 // 
+select -r pCylinder3 ;
+scale -r 0.254084 0.254084 0.254084 ;
+scale -r 1 8.291444 1 ;
+scale -r 0.704407 0.704407 0.704407 ;
+scale -r 1 1.820474 1 ;
+scale -r 0.643049 0.643049 0.643049 ;
+scale -r 1 1.599276 1 ;
+move -r -0.0073503 0 0 ;
+scale -r 0.861327 1 0.861327 ;
+move -r 0.00568845 0 0 ;
+move -r 0 0.803677 0 ;
+select -r pCylinder3 ;
+duplicate -rr;
+// Result: pCylinder4 //
+move -r 0 -0.508214 0 ;
+duplicate -rr;
+// Result: pCylinder5 //
+move -r 0 -0.475743 0 ;
+duplicate -rr;
+// Result: pCylinder6 //
+move -r 0 -0.453178 0 ;
+select -r pCylinder4 ;
+move -r 0 0.0425493 0 ;
+select -r pCylinder5 ;
+move -r 0 0.0214866 0 ;
+select -r pCylinder6 ;
+move -r 0 0.0433903 0 ;
+select -r pCylinder3 pCylinder6 pCylinder5 pCylinder4 ;
+move -r 0 0.0265388 0 ;
+select -r pCylinder4 ;
+move -r 0 0.0361755 0 ;
+select -r pCylinder5 ;
+move -r 0 0.090818 0 ;
+select -cl  ;
+select -r pCylinder6 ;
+move -r 0 0.104339 0 ;
+select -r pCube28 pCylinder3 pCylinder6 pCylinder5 pCylinder4 pCube29 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCube28 pCube28 pCylinder3 pCylinder6 pCylinder5 pCylinder4 pCube29;
+// Result: pCube30 polyUnite8 // 
+move -r -0.345211 0 -2.105154 ;
+rotate -r -os -fo 0 32.468839 0 ;
+move -r -0.0710265 0 0.14165 ;
+rotate -r -os -fo 0 3.757836 0 ;
+move -r -0.132131 0 0.122217 ;
+duplicate -rr;
+// Result: pCube31 //
+move -r 0 -1.690352 0 ;
+move -r 0 -0.00508861 0 ;
+duplicate -rr;
+// Result: pCube32 //
+move -r 0 -1.699647 0 ;
+duplicate -rr;
+// Result: pCube33 //
+move -r 0 -1.662538 0 ;
+move -r 0 -0.0375323 0 ;
+duplicate -rr;
+// Result: pCube34 //
+move -r 0 -1.705496 0 ;
+move -r 0 0.00456113 0 ;
+duplicate -rr;
+// Result: pCube35 //
+move -r 0 -1.70084 0 ;
+duplicate -rr;
+// Result: pCube36 //
+move -r 0 -1.729282 0 ;
+move -r 0 0.0766065 0 ;
+move -r 0 0.0428744 0 ;
+select -r pCube35 ;
+move -r 0 0.0133029 0 ;
+select -r pCube34 ;
+move -r 0 0.0119655 0 ;
+select -r pCube30 ;
+select -tgl pCube31 ;
+select -tgl pCube32 ;
+select -tgl pCube33 ;
+select -tgl pCube34 ;
+select -tgl pCube35 ;
+select -tgl pCube36 ;
+duplicate -rr;
+// Result: pCube37 pCube38 pCube39 pCube40 pCube41 pCube42 pCube43 //
+move -r 0.353914 0 3.704474 ;
+move -r -1.180989 0 -1.246935 ;
+rotate -r -os -fo 0 -37.206908 0 ;
+setAttr "pCube43.rotateY" -3;
+setAttr "pCube43.rotateY" 0;
+setAttr "pCube37.rotateY" 0;
+setAttr "pCube38.rotateY" 0;
+setAttr "pCube39.rotateY" 0;
+setAttr "pCube40.rotateY" 0;
+setAttr "pCube41.rotateY" 0;
+setAttr "pCube42.rotateY" 0;
+move -r 0 -5.199894 0 ;
+move -r 0 -5.92165 0 ;
+move -r 0 -0.0949382 0 ;
+move -r 0 0.0893932 0 ;
+move -r 0 0 0.0800498 ;
+select -r pCube37 ;
+duplicate -rr;
+// Result: pCube44 //
+move -r 0 1.701397 0 ;
+select -cl  ;
+select -r pCube30 ;
+duplicate -rr;
+// Result: pCube45 //
+move -r 0 1.711683 0 ;
+select -r pCube42 ;
+select -tgl pCube43 ;
+select -tgl pCube41 ;
+select -tgl pCube40 ;
+select -tgl pCube39 ;
+select -tgl pCube38 ;
+select -tgl pCube37 ;
+select -tgl pCube44 ;
+duplicate -rr;
+// Result: pCube46 pCube47 pCube48 pCube49 pCube50 pCube51 pCube52 pCube53 //
+move -r 0 0 -4.36353 ;
+move -r -4.048385 0 0 ;
+move -r 1.219575 0 0 ;
+move -r 0 -10.3006 0 ;
+move -r 0 -3.083991 0 ;
+select -r |polySurface1 ;
+duplicate -rr;
+// Result: polySurface5 //
+move -r -11.086454 0 0 ;
+setAttr "polySurface5.rotateY" 0;
+setAttr "polySurface5.rotateY" 90;
+setAttr "polySurface5.rotateY" 270;
+move -r 6.574978 0 0 ;
+move -r 0 -23.212134 0 ;
+move -r 0 0 -2.163858 ;
+move -r 0.598161 0 0 ;
+move -r 0 0.40733 0 ;
+move -r -0.056332 0 0 ;
+
+select -r polySurface5 ;
+ polySeparate -sss 0 -sss 1 -ch 1 polySurface5Shape;
+// Result: polySurface6 polySurface7 polySurface8 polySeparate2 // 
+select -r polySurface8 ;
+select -r polySurface8 ;
+select -r polySurface8 ;
+select -r polySurface8 ;
+select -r polySurface8 ;
+select -r pCube51 polySurface8 ;
+select -cl  ;
+select -r polySurface8 ;
+select -r polySurface8.f[276] polySurface8.f[278] polySurface8.f[280:282] polySurface8.f[284] polySurface8.f[286:288] polySurface8.f[290] polySurface8.f[292:294] polySurface8.f[296] polySurface8.f[298:300] polySurface8.f[302] polySurface8.f[304:306] polySurface8.f[308] polySurface8.f[310:312] polySurface8.f[314] polySurface8.f[316:317] ;
+ polySeparate -sss 24 -sss 25 -sss 26 -sss 27 -sss 28 -sss 29 -sss 30 -ch 1 polySurfaceShape7;
+// Result: polySurface9 polySurface10 polySurface11 polySurface12 polySurface13 polySurface14 polySurface15 polySurface16 polySeparate3 // 
+select -r polySurface14 ;
+select -r pCube52 pCube51 polySurface11 polySurface9 polySurface10 polySurface12 polySurface14 polySurface16 polySurface13 polySurface15 polySurface6 ;
+select -cl  ;
+select -r pCube52 pCube51 polySurface11 polySurface9 polySurface10 polySurface12 polySurface14 polySurface16 polySurface13 polySurface15 polySurface6 ;
+select -d pCube52 polySurface16 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCube51 pCube51 polySurface11 polySurface9 polySurface10 polySurface12 polySurface14 polySurface13 polySurface15 polySurface6;
+// Result: pCube54 polyUnite9 // 
+select -r polySurface16 ;
+select -r polySurface7 ;
+select -tgl polySurface16 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface7 polySurface7 polySurface16;
+// Result: |polySurface7 polyUnite10 // 
+select -r |polySurface7 ;
+select -add |polySurface7.f[0:49] ;
+select -r |polySurface7.f[0:49] |polySurface7.f[326:417] ;
+ polySeparate -sss 0 -sss 25 -sss 26 -sss 27 -sss 28 -sss 29 -sss 30 -sss 31 -sss 32 -ch 1 polySurface7Shape;
+// Result: polySurface17 polySurface18 polySurface19 polySurface20 polySurface21 polySurface22 polySurface23 polySurface24 polySurface25 polySurface26 polySeparate4 // 
+select -r pCube50 pCube49 polySurface21 polySurface23 polySurface25 polySurface22 polySurface24 polySurface17 polySurface18 polySurface20 polySurface19 pCube54 pCylinder2 ;
+select -d pCylinder2 ;
+select -d pCube49 ;
+select -d pCube50 ;
+select -d pCube54 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface21 polySurface21 polySurface23 polySurface25 polySurface22 polySurface24 polySurface17 polySurface18 polySurface20 polySurface19;
+// Result: |polySurface21 polyUnite11 // 
+select -r |polySurface21 ;
+duplicate -rr;
+// Result: polySurface27 //
+move -r 0 -5.070564 0 ;
+select -cl  ;
+select -r |polySurface21 ;
+// Undo: select -r |polySurface21  // 
+// Undo: select -cl   // 
+// Undo: move -r 0 -5.070564 0  // 
+// Undo: Duplicate // 
+move -r 0 -5.492681 0 ;
+select -r pCube54 ;
+duplicate -rr;
+// Result: pCube55 //
+move -r 0 -1.641655 0 ;
+move -r 0 -1.61076 0 ;
+select -r pCube50 ;
+select -tgl pCube49 ;
+select -tgl pCube48 ;
+select -tgl pCube46 ;
+select -tgl pCube46 ;
+doDelete;
+select -r pCube55 ;
+move -r 0 1.544621 0 ;
+duplicate -rr;
+// Result: pCube56 //
+move -r 0 -1.698675 0 ;
+duplicate -rr;
+// Result: pCube57 //
+move -r 0 -1.672127 0 ;
+move -r 0 0.0077789 0 ;
+select -r |polySurface21 ;
+move -r 0 0.380528 0 ;
+DeleteHistory ;
+select -r polySurface26 ;
+select -tgl pCube54 ;
+select -tgl pCube55 ;
+select -tgl pCube56 ;
+select -tgl pCube57 ;
+select -tgl polySurface27 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface26 polySurface26 pCube54 pCube55 pCube56 pCube57 polySurface27;
+// Result: |polySurface26 polyUnite1 // 
+select -r pCube47 ;
+duplicate -rr;
+// Result: pCube58 //
+move -r 0 -1.682994 0 ;
+select -r polySurface21 ;
+select -r polySurface21 ;
+select -r |polySurface26 ;
+select -r polySurface21 ;
+doDelete;
+select -r pCylinder1 ;
+select -tgl pCube1 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCylinder1 pCylinder1 pCube1;
+// Merged together top part of stack.
+select -r pTorus8 pCylinder2 |polySurface26 pCube12 pCube11 pCube16 pCube15 pCube14 pCube25 pCube24 pCube23 pCube43 pCube42 pCube53 pCube52 pCube10 pCube9 pCube18 pCube17 ;
+select -d pCube42 ;
+select -d pCube11 ;
+select -d |polySurface26 ;
+select -d |polySurface26 ;
+select -d |polySurface26 ;
+select -d |polySurface26 pCube53 pCube52 ;
+select -add pCube13 pCube25 pCube24 pCube9 ;
+select -d pCube43 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pTorus8 pTorus8 pCylinder2 pCube12 pCube16 pCube15 pCube14 pCube23 pCube10 pCube18 pCube17 pCube13 pCube25 pCube24 pCube9;
+// Merged together bottom part of stack.
+select -r pCube36 ;
+select -tgl pCube35 ;
+select -tgl pCube34 ;
+select -tgl pCube33 ;
+select -tgl pCube32 ;
+select -tgl pCube31 ;
+select -tgl pCube30 ;
+select -tgl pCube45 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCube36 pCube36 pCube35 pCube34 pCube33 pCube32 pCube31 pCube30 pCube45;
+// Result: pCube58 polyUnite5 // 
+// Merged top ladder without cage.
+select -r pCube44 ;
+select -tgl pCube37 ;
+select -tgl pCube38 ;
+select -tgl pCube39 ;
+select -tgl pCube40 ;
+select -tgl pCube41 ;
+select -tgl pCube42 ;
+select -tgl pCube43 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCube44 pCube44 pCube37 pCube38 pCube39 pCube40 pCube41 pCube42 pCube43;
+// Result: pCube59 polyUnite6 //
+// Merged middle ladder without cage. 
+select -r |polySurface26 ;
+select -tgl pCube52 ;
+select -tgl pCube53 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name |polySurface26 |polySurface26 pCube52 pCube53;
+// Result: polySurface28 polyUnite7 //
+select -r |polySurface4 ;
+DeleteHistory ;
+select -r polySurface4 ;
+select -tgl pCube60 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface4 polySurface4 pCube60;
+// Result: polySurface29 polyUnite8 // 
+select -r |polySurface1 ;
+DeleteHistory ;
+select -r polySurface1 ;
+select -tgl pCube59 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface1 polySurface1 pCube59 ;
+// Result: pCube60 polyUnite9 //  
+select -r polySurface28 pCube47 pCube46 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface28 polySurface28 pCube47 pCube46;
+// Result: polySurface30 polyUnite10 // 
+select -cl  ;
+select -r pCube27 ;
+select -tgl pCube26 ;
+select -tgl polySurface30 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pCube27 pCube27 pCube26 polySurface30;
+// Result: pCube62 polyUnite20 // 
+select -r polySurface31 ;
+select -tgl pCube58 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name polySurface31 polySurface31 pCube58;
+// Result: pCube61 polyUnite11 // 
+select -r pTorus19 ;
+select -tgl pCylinder7 ;
+select -tgl pTorus7 ;
+select -tgl pTorus6 ;
+select -tgl pCube11 ;
+polyUnite -ch 1 -mergeUVSets 1 -centerPivot -name pTorus19 pTorus19 pCylinder7  pCube11 pTorus7 pTorus6;
+// Result: pCube62 polyUnite12 // 
+// Merge main stack.
+
+// FREEZE TRANSFORMATIONS
+select -r pTorus20 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+select -r pCube61 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+select -r polySurface29 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+select -r polySurface32 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+
+// DELETE ALL HISTORY
+select -r pCube61 polySurface32 polySurface29 pTorus20 ;
+DeleteHistory ;
+delete pTorus3 pTorus4 ;
+
+// RENAME ALL REMAINING OBJECTS
+rename "polySurface32" "CageLadder_01";
+rename "pCube61" "CageLadder_03";
+rename "pTorus20" "MainStack";
+rename "polySurface29" "CageLadder_02";
+
+// GROUPING AND PARENTING
+group -empty -name "Furnace";
+group -empty -name "Geometry" -parent "Furnace";
+
+parent CageLadder_01 Geometry ;
+parent CageLadder_02 Geometry ;
+parent CageLadder_03 Geometry ;
+parent MainStack Geometry ;
+
 select -cl  ;
