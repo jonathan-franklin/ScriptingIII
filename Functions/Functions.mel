@@ -1,0 +1,26 @@
+// Using proc to declare a new function.
+proc BuildShape (int $duplicates, float $rangeMin, float $rangeMax) 
+{
+    string $selection[] = `ls -selection -long`;
+    group -name selection $selection;
+    
+    for ($i = 0; $i < $duplicates; $i++) 
+    {
+        string $duplications[] = `duplicate selection`;
+        float $x = rand($rangeMin, $rangeMax);
+        print("X" + $i + ": " + $x + " ");
+        float $y = rand($rangeMin, $rangeMax);
+        print("Y" + $i + ": " + $y + " ");
+        float $z = rand($rangeMin, $rangeMax);
+        print("Z" + $i + ": " + $z + " ");
+        select -r $duplications[0];
+        move $x $y $z;
+    }
+
+    //for ($i = 0; $i < $duplicates; $i++) 
+    //{
+    //    print(rand($rangeMin, $rangeMax) + " ");
+    //}
+}
+
+BuildShape(5, -5, 5);
