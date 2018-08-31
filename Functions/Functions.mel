@@ -16,11 +16,11 @@ proc BuildShape (int $duplicates, float $rangeMin, float $rangeMax)
         select -r $duplications[0];
         move $x $y $z;
     }
-
-    //for ($i = 0; $i < $duplicates; $i++) 
-    //{
-    //    print(rand($rangeMin, $rangeMax) + " ");
-    //}
+    
+    select -r `listTransforms -geometry`;
+    parent -world; 
+    select -r `ls "selection*"`;
+    doDelete;
 }
 
-BuildShape(5, -5, 5);
+BuildShape(5, -10, 10);
