@@ -1,0 +1,17 @@
+proc Renamer(string $rename)
+{
+    string $sel[] = `ls -selection -long`;
+    int $numItems = size($sel);
+
+    tokenize($rename, "_", $sel);
+        
+    for ($i = 0; $i < $numItems; $i++)
+    {
+
+        rename();
+    }
+    print($sel);
+
+}
+
+Renamer("Left_#_Jnt");
