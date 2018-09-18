@@ -1,14 +1,19 @@
 proc Renamer(string $rename)
 {
     string $sel[] = `ls -selection -long`;
+    string $holding[];
     int $numItems = size($sel);
 
-    tokenize($rename, "_", $sel);
-        
-    for ($i = 0; $i < $numItems; $i++)
-    {
+    tokenize($rename, "#", $holding);
+    int $i = 1;
+    string $newSel;
 
-        rename();
+    for ($obj in $sel)
+    {
+        $newSel = $holding[0] + $i + $holding[1];
+        rename($obj, $newSel);
+        
+        $i += 1;
     }
     print($sel);
 
