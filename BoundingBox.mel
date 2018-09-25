@@ -1,0 +1,31 @@
+global proc string CenterLocator ()
+{
+    // Assign selection to an array
+    string $sels[] = `ls -sl`;
+    // Duplicating the selection as a temp object
+    // and assigning to new array
+    string $temp[] = `duplicate -rr $sels`;
+
+    // Check whether more than one object in sels
+    if (size($temp) > 1)
+    {
+        $temp = `polyUnite $temp`;
+    }
+
+    float $bbPos[];
+    $bbPos = `xform -q -boundingBox $temp`;
+    delete -constructionHistory $temp[0];
+    delete $temp[0];
+
+    float $xPos, $yPos, $xPos;
+    $xPos = ($bbPos[0] + $bbPos[3]) / 2;
+    $yPos = ($bbPos[1] + $bbPos[4]) / 2;
+    $zPos = ($bbPos[2] + $bbPos[5]) / 2;
+
+    string $loc[] = `spaceLocator - name "TempLocator" -position 0 0 0`;
+    xform -translation $xPos $yPos $zPos - worldSpace -absolute $loc[0];
+
+    return $loc[0];
+}
+
+CenterLocator();

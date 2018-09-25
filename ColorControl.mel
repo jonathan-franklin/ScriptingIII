@@ -1,0 +1,28 @@
+global proc ColorControl(string $ctrl, int $color)
+{
+    // This scripts sets the color of controls
+    
+
+    //define string array for shapes
+    string $shapes[];
+
+    setAttr "nurbsCircleShape2.overrideEnabled" 1;
+    // Find the shape node on control
+    $shapes = `listRelatives -shapes $ctrl`;
+
+    for ($shape in $shapes)
+    {
+        if (nodeType $shape == "nurbsCurve")
+        {
+            // enable override on $Ctrl shape
+            setAttr ($shape + ".overrideEnabled") 1;
+
+            // set shape color on $Ctrl to $color
+            setAttr ($shape + ".overrideColor") $color;
+        }
+    }
+    else
+    {
+        warning("Selected object is not a curve.");
+    }
+}
