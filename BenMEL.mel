@@ -11,8 +11,8 @@ global proc CreateControls(){//Final Button push Proc.
         {
             circle -center 0 0 0 -normal 0 1 0 -sw 360 -radius 1 -degree 3 -sections 8;
             ColorControl($Red, $Green, $Blue);
-            Rename();
-            MatchTransforms();
+            //Rename();
+            //MatchTransforms();
             //Group;
             //rename "group1" "Ctrl_Grp";
         }
@@ -30,9 +30,9 @@ global proc CreateControls(){//Final Button push Proc.
 }
 
 global proc ColorControl(float $Red, float $Green, float $Blue){
-    //float[] $Color = {$Red,$Green,$Blue};
-    setAttr "nurbsCircle.overrideEnabled" 1;
-    //setAttr ("nurbsCircle.overrideColor") $Color;
+    float $Color[] = {$Red,$Green,$Blue};
+    setAttr "nurbsCircle1.overrideEnabled" 1;
+    setAttr ("nurbsCircle.overrideColor") $Color;
     print "Colored";
     //print $Color;
     }
