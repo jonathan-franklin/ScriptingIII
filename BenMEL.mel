@@ -1,0 +1,50 @@
+global proc CreateControls(){//Final Button push Proc. 
+    float $RGBValues[] = `SelectColor`;
+    float $Red = $RGBValues[0];
+    float $Green = $RGBValues[1];
+    float $Blue = $RGBValues[2];
+    
+    string $SelectedObject[] = `ls -selection`;
+
+    //if(`optionMenu -query -v Shape` == "Circle"){//checks if output of optionMenu == Circle not working right now. 
+        for($item in $SelectedObject)
+        {
+            circle -center 0 0 0 -normal 0 1 0 -sw 360 -radius 1 -degree 3 -sections 8;
+            ColorControl($Red, $Green, $Blue);
+            Rename();
+            MatchTransforms();
+            //Group;
+            //rename "group1" "Ctrl_Grp";
+        }
+    //}
+    //else{
+    //    print "Warning: No Shape Selected"; 
+    //    } 
+    //if(`optionMenu -query -v Shape` == "Circle"){
+        if(size ($SelectedObject) <= 0){
+            circle -center 0 0 0 -normal 0 1 0 -sw 360 -radius 1 -degree 3 -sections 8;
+            //Group;
+            //rename "group1" "Ctrl_Grp";
+        }
+    //}
+}
+
+global proc ColorControl(float $Red, float $Green, float $Blue){
+    //float[] $Color = {$Red,$Green,$Blue};
+    setAttr "nurbsCircle.overrideEnabled" 1;
+    //setAttr ("nurbsCircle.overrideColor") $Color;
+    print "Colored";
+    //print $Color;
+    }
+    
+global proc float[] SelectColor(){//returns RGBValues [] 
+    colorEditor;
+    float $RGBValues[];
+ if (`colorEditor -query -result`) {
+    $RGBValues = `colorEditor -query -rgb`;
+    }
+print $RGBValues;
+return $RGBValues;
+}
+
+CreateControls();
