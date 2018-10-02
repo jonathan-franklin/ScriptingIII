@@ -1,50 +1,125 @@
 global proc MasterControlCreator ()
 {
-    window  -title "Master Control Program" -widthHeight 300 200;
+    window  -title "Master Control Program" -widthHeight 500 200;
         frameLayout -label "Control Parameters" -collapsable true; 
             rowLayout -numberOfColumns 2;
                 columnLayout;
-                    text -label "Select Control Shape";
+                    text -label "Set Color";
 			    // create the first radio collection
                     $radio1 = `radioCollection`;
             
                         // add some radio buttons to the collection
-                        $circle  = `radioButton -label "Circle"`;
-                        $star = `radioButton -label "Star"`;
-                        $square = `radioButton -label "Square"`;
+
+                        //$circle = `radioButton -label "Circle" -onCommand "print($circular)"`;
+                        //$star = `radioButton -label "Star"`;
+                        //$square = `radioButton -label "Square"`;
                 setParent ..;
                 
-                swatchDisplayPort -enable true -pc colorEditor -highlightColor 0 0 0 -wh 256 256 slPP ;
+                //swatchDisplayPort -enable true -pc SelectColor() -highlightColor 0 0 0 -wh 256 256 slPP ;
                 //button -label "Open Color Selector";
             setParent ..;
         setParent ..;
         
         frameLayout -label "Execute" -collapsable false;
-            rowLayout -numberOfColumns 2;
-                button -label "Create Controls" -command "CreateControls";
+            rowLayout -numberOfColumns 3;
+                button -label "Create Circle Controls" -command "CreateCircleControls";
+                button -label "Create Square Controls" -command "CreateSquareControls";
                 button -label "Color Controls" -command "Colorizer";
             setParent ..;
         setParent ..;
     showWindow;
 }
 
-global proc CreateControls ()
+global proc CreateCircleControls ()
 {
     string $sels[] = `ls -sl`;
 
-    for ($sel in $sels)
+    if (size($sels) != 0)
     {
-        string $ctrls[] = `circle -name ($sel + "_Ctrl")`;
-        string $ctrl = $ctrls[0];
+        for ($sel in $sels)
+        {
+            string $ctrls[] = `circle -name ($sel + "_Ctrl")`;
+            string $ctrl = $ctrls[0];
 
-        string $grps[] = `Group -name ($sel + "_Ctrl_Grp")`;
-        string $grp = $grps[0];
+            //string $grps[] = `group -name ($sel + "_Ctrl_Grp")`;
+            string $grp = `group -name ($sel + "_Ctrl_Grp")`;
 
-        ColorControl($ctrl, 2);
+            ColorControl($ctrl, 3);
 
-        vector $jointPosition = `xform -worldSpace`;
-        xform -translation $jointPosition $grp;
+            matchTransform $grp $sel;
+        }
+    }
+    else
+    {
+            string $ctrls[] = `circle `;
+            string $ctrl = $ctrls[0];
 
+            //string $grps[] = `group`;
+            string $grp = `group`;
+
+            ColorControl($ctrl, 3);
+    }
+}
+
+global proc CreateSquareControls ()
+{
+    string $sels[] = `ls -sl`;
+
+    if (size($sels) != 0)
+    {
+        for ($sel in $sels)
+        {
+            string $ctrls[] = `nurbsSquare -name ($sel + "_Ctrl")`;
+            string $ctrl = $ctrls[0];
+
+            //string $grps[] = `group -name ($sel + "_Ctrl_Grp")`;
+            string $grp = `group -name ($sel + "_Ctrl_Grp")`;
+
+            ColorControl($ctrl, 3);
+
+            matchTransform $grp $sel;
+        }
+    }
+    else
+    {
+            string $ctrls[] = `nurbsSquare`;
+            string $ctrl = $ctrls[0];
+
+            //string $grps[] = `group`;
+            string $grp = `group`;
+
+            ColorControl($ctrl, 3);
+    }
+}
+
+global proc CreateStarControls ()
+{
+    string $sels[] = `ls -sl`;
+
+    if (size($sels) != 0)
+    {
+        for ($sel in $sels)
+        {
+            string $ctrls[] = `circle -name ($sel + "_Ctrl")`;
+            string $ctrl = $ctrls[0];
+
+            string $grps[] = `group -name ($sel + "_Ctrl_Grp")`;
+            string $grp = $grps[0];
+
+            ColorControl($ctrl, 3);
+
+            matchTransform $grp $sel;
+        }
+    }
+    else
+    {
+            string $ctrls[] = `circle `;
+            string $ctrl = $ctrls[0];
+
+            string $grps[] = `group`;
+            string $grp = $grps[0];
+
+            ColorControl($ctrl, 3);
     }
 }
 
@@ -54,7 +129,9 @@ global proc Colorizer()
     string $ctrls[];
     
     $ctrls = `ls -sl`;
-    
+
+    float $colorRGB[] = `SelectColor`;
+
     for ($ctrl in $ctrls)
     {
         ColorControl($ctrl, 2);
@@ -90,10 +167,19 @@ global proc ColorControl(string $ctrl, int $color)
 
 }
 
-global proc MatchTransform()
-{
+global proc float[] SelectColor()
+{ 
+    colorEditor;
+    float $ColorRGB[];
 
+    if (`colorEditor -query -result`) 
+    {
+        $ColorRGB = `colorEditor -query -rgb`;
+    }
+
+return $ColorRGB;
 }
+
 /*
 global proc string CenterLocator ()
 {
