@@ -1,6 +1,6 @@
 global proc MasterControlCreator ()
 {
-    window  -title "Master Control Program" -widthHeight 500 200;
+    window  -title "Master Control Creator" -widthHeight 500 200;
         frameLayout -label "Control Parameters" -collapsable true; 
             rowLayout -numberOfColumns 2;
                 columnLayout;

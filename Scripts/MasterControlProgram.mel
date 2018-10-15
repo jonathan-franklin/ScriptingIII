@@ -1,0 +1,52 @@
+source "MyScripts/Rename.mel";
+source "MyScripts/RandomPlacement.mel";
+source "MyScripts/CreateControls.mel";
+
+global proc MasterControlProgram ()
+{
+    window  -title "Master Control Program" -widthHeight 500 200;
+        frameLayout -label "Renamer" -collapsable true; 
+            rowLayout -numberOfColumns 2;
+                columnLayout;
+                    text -label "Set Color";
+			    // create the first radio collection
+                    $radio1 = `radioCollection`;
+            
+                        // add some radio buttons to the collection
+
+                        //$circle = `radioButton -label "Circle" -onCommand "print($circular)"`;
+                        //$star = `radioButton -label "Star"`;
+                        //$square = `radioButton -label "Square"`;
+                setParent ..;
+                
+                //swatchDisplayPort -enable true -pc SelectColor() -highlightColor 0 0 0 -wh 256 256 slPP ;
+                //button -label "Open Color Selector";
+            setParent ..;
+        setParent ..;
+        
+        frameLayout -label "Random Placer" -collapsable true;
+            rowLayout -numberOfColumns 3;
+                text -label "# of Duplicates";
+                text -label "Min Range";
+                text -label "Max Range";
+            setParent;
+            
+            rowLayout -numberOfColumns 3;
+                int $duplicates = `floatField`;
+                float $minRange = `floatField`;
+                float $maxRange = `floatField`;
+            setParent;
+
+            rowLayout -numberOfColumns 1;
+                button -label "Execute" -command "BuildShape"
+        setParent ..;
+
+        frameLayout -label "Execute" -collapsable false;
+            rowLayout -numberOfColumns 3;
+                button -label "Create Circle Controls" -command "CreateCircleControls";
+                button -label "Create Square Controls" -command "CreateSquareControls";
+                button -label "Color Controls" -command "Colorizer";
+            setParent ..;
+        setParent ..;
+    showWindow;
+}
