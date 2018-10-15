@@ -4,49 +4,57 @@ source "MyScripts/CreateControls.mel";
 
 global proc MasterControlProgram ()
 {
-    window  -title "Master Control Program" -widthHeight 500 200;
-        frameLayout -label "Renamer" -collapsable true; 
-            rowLayout -numberOfColumns 2;
-                columnLayout;
-                    text -label "Set Color";
-			    // create the first radio collection
-                    $radio1 = `radioCollection`;
-            
-                        // add some radio buttons to the collection
+    window  -title "Master Control Program" -widthHeight 500 300;
+        frameLayout -label "Renamer" -collapsable false; 
+            columnLayout -rowSpacing 5;
+                textField -placeholderText "Prefix_##_Suffix" -width 200 RenameField;
 
-                        //$circle = `radioButton -label "Circle" -onCommand "print($circular)"`;
-                        //$star = `radioButton -label "Star"`;
-                        //$square = `radioButton -label "Square"`;
-                setParent ..;
-                
-                //swatchDisplayPort -enable true -pc SelectColor() -highlightColor 0 0 0 -wh 256 256 slPP ;
-                //button -label "Open Color Selector";
+                button -label "Execute" -command "CheckRenameField";
             setParent ..;
         setParent ..;
         
-        frameLayout -label "Random Placer" -collapsable true;
-            rowLayout -numberOfColumns 3;
-                text -label "# of Duplicates";
-                text -label "Min Range";
-                text -label "Max Range";
-            setParent;
-            
-            rowLayout -numberOfColumns 3;
-                int $duplicates = `floatField`;
-                float $minRange = `floatField`;
-                float $maxRange = `floatField`;
-            setParent;
+        frameLayout -label "Random Placer" -collapsable false -height 75;
+            columnLayout -rowSpacing 5;
+                rowLayout -numberOfColumns 4 -columnWidth4 100 2 100 100;
+                    text -label "# of Duplicates";
+                    separator -style "single";
+                    text -label "Min Range";
+                    text -label "Max Range";
+                setParent ..;
+                
+                rowLayout -numberOfColumns 4 -columnWidth4 100 2 100 100;
+                    intField duplicatesField;
+                    separator -style "single";
+                    floatField minRangeField;
+                    floatField maxRangeField;
+                setParent ..;
 
-            rowLayout -numberOfColumns 1;
-                button -label "Execute" -command "BuildShape"
-        setParent ..;
-
-        frameLayout -label "Execute" -collapsable false;
-            rowLayout -numberOfColumns 3;
-                button -label "Create Circle Controls" -command "CreateCircleControls";
-                button -label "Create Square Controls" -command "CreateSquareControls";
-                button -label "Color Controls" -command "Colorizer";
+                rowLayout -numberOfColumns 1;
+                    button -label "Execute" -command "CheckRandomizerFields";
+                setParent ..;
             setParent ..;
         setParent ..;
+
+        frameLayout -label "Controls" -collapsable false;
+            rowLayout -numberOfColumns 1;
+                button -label "Open Control Utility" -command "MasterControlCreator";
+            setParent ..;
+        setParent ..;
+
     showWindow;
+}
+
+global proc CheckRenameField ()
+{
+    string $input = `textField -q -text RenameField`;
+    Renamer($input);
+}
+
+global proc CheckRandomizerFields ()
+{
+    int $duplicates = `intField -q -value duplicatesField`;
+    float $minRange = `floatField -q -value minRangeField`;
+    float $maxRange = `floatField -q -value maxRangeField`;
+
+    RandomPlacer($duplicates, $minRange, $maxRange);
 }

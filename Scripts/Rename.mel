@@ -1,4 +1,4 @@
-proc Renamer(string $rename)
+global proc Renamer(string $rename)
 {
     string $sel[] = `ls -selection -long`;
     string $holding[];
@@ -71,5 +71,3 @@ proc Renamer(string $rename)
     }
     print($numPad);
 }
-
-Renamer("Left_####_Jnt");

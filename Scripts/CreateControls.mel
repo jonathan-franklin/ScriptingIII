@@ -2,21 +2,49 @@ global proc MasterControlCreator ()
 {
     window  -title "Master Control Creator" -widthHeight 500 200;
         frameLayout -label "Control Parameters" -collapsable true; 
-            rowLayout -numberOfColumns 2;
+            rowLayout -numberOfColumns 3;
                 columnLayout;
-                    text -label "Set Color";
-			    // create the first radio collection
-                    $radio1 = `radioCollection`;
-            
-                        // add some radio buttons to the collection
+                    text -label "DO NOT USE YET";
 
-                        //$circle = `radioButton -label "Circle" -onCommand "print($circular)"`;
-                        //$star = `radioButton -label "Star"`;
-                        //$square = `radioButton -label "Square"`;
+			        // create the first radio collection
+                    $radio1 = `radioCollection`;
+                        // add some radio buttons to the collection
+                        radioButton -label "Circle" -onCommand "print($circular)";
+                        radioButton -label "Star";
+                        radioButton -label "Square";
+
                 setParent ..;
                 
-                //swatchDisplayPort -enable true -pc SelectColor() -highlightColor 0 0 0 -wh 256 256 slPP ;
-                //button -label "Open Color Selector";
+                separator -style "single" -width 50 -horizontal 0;
+
+                columnLayout;
+                    // Parameters for making custom color palette.
+                    $maxOverrideColors = 32;
+                    $formOffset = 2;
+                    $columns = $maxOverrideColors / 2;
+                    $rows = 2;
+                    $cellWidth = 17;
+                    $cellHeight = 17;
+
+                    text -label "Select Color";
+                    
+                    // Create a color palette with all of the available override colors
+                    $colorPalette = `palettePort -dimensions $columns $rows
+                                                -transparent 0
+                                                -width ($columns * $cellWidth)
+                                                -height ($rows * $cellHeight)
+                                                -topDown 1
+                                                -colorEditable 0
+                                                myPalette`;
+
+                    for ($index = 1; $index < $maxOverrideColors; ++$index) 
+                    {
+                        $colorComponent = `colorIndex -q $index`;
+                        palettePort -e -rgbValue $index $colorComponent[0] $colorComponent[1] $colorComponent[2] $colorPalette;
+                    }
+        
+                    palettePort -e -rgbValue 0 0.6 0.6 0.6 $colorPalette;
+                setParent;
             setParent ..;
         setParent ..;
         
@@ -30,9 +58,10 @@ global proc MasterControlCreator ()
     showWindow;
 }
 
-global proc CreateCircleControls ()
+proc CreateCircleControls ()
 {
     string $sels[] = `ls -sl`;
+    int $colorRGB = `palettePort -q -setCurCell myPalette`;
 
     if (size($sels) != 0)
     {
@@ -44,7 +73,7 @@ global proc CreateCircleControls ()
             //string $grps[] = `group -name ($sel + "_Ctrl_Grp")`;
             string $grp = `group -name ($sel + "_Ctrl_Grp")`;
 
-            ColorControl($ctrl, 3);
+            ColorControl($ctrl, $colorRGB);
 
             matchTransform $grp $sel;
         }
@@ -57,13 +86,14 @@ global proc CreateCircleControls ()
             //string $grps[] = `group`;
             string $grp = `group`;
 
-            ColorControl($ctrl, 3);
+            ColorControl($ctrl, $colorRGB);
     }
 }
 
-global proc CreateSquareControls ()
+proc CreateSquareControls ()
 {
     string $sels[] = `ls -sl`;
+    int $colorRGB = `palettePort -q -setCurCell myPalette`;
 
     if (size($sels) != 0)
     {
@@ -75,7 +105,7 @@ global proc CreateSquareControls ()
             //string $grps[] = `group -name ($sel + "_Ctrl_Grp")`;
             string $grp = `group -name ($sel + "_Ctrl_Grp")`;
 
-            ColorControl($ctrl, 3);
+            ColorControl($ctrl, $colorRGB);
 
             matchTransform $grp $sel;
         }
@@ -88,13 +118,14 @@ global proc CreateSquareControls ()
             //string $grps[] = `group`;
             string $grp = `group`;
 
-            ColorControl($ctrl, 3);
+            ColorControl($ctrl, $colorRGB);
     }
 }
 
-global proc CreateStarControls ()
+proc CreateStarControls ()
 {
     string $sels[] = `ls -sl`;
+    int $colorRGB = `palettePort -q -setCurCell myPalette`;
 
     if (size($sels) != 0)
     {
@@ -106,7 +137,7 @@ global proc CreateStarControls ()
             string $grps[] = `group -name ($sel + "_Ctrl_Grp")`;
             string $grp = $grps[0];
 
-            ColorControl($ctrl, 3);
+            ColorControl($ctrl, $colorRGB);
 
             matchTransform $grp $sel;
         }
@@ -119,7 +150,7 @@ global proc CreateStarControls ()
             string $grps[] = `group`;
             string $grp = $grps[0];
 
-            ColorControl($ctrl, 3);
+            ColorControl($ctrl, $colorRGB);
     }
 }
 
@@ -130,11 +161,11 @@ global proc Colorizer()
     
     $ctrls = `ls -sl`;
 
-    float $colorRGB[] = `SelectColor`;
+    int $colorRGB = `palettePort -q -setCurCell myPalette`;
 
     for ($ctrl in $ctrls)
     {
-        ColorControl($ctrl, 2);
+        ColorControl($ctrl, $colorRGB);
     }
 }
 
@@ -165,19 +196,6 @@ global proc ColorControl(string $ctrl, int $color)
         }
     }
 
-}
-
-global proc float[] SelectColor()
-{ 
-    colorEditor;
-    float $ColorRGB[];
-
-    if (`colorEditor -query -result`) 
-    {
-        $ColorRGB = `colorEditor -query -rgb`;
-    }
-
-return $ColorRGB;
 }
 
 /*
@@ -211,4 +229,3 @@ global proc string CenterLocator ()
     //return $loc[0];
 }
 */
-MasterControlCreator()
