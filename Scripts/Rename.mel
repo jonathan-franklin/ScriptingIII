@@ -1,6 +1,6 @@
 global proc Renamer(string $rename)
 {
-    string $sel[] = `ls -selection -long`;
+    string $sel[] = `ls -selection`;
     string $holding[];
 
     tokenize($rename, "#", $holding);
@@ -27,47 +27,46 @@ global proc Renamer(string $rename)
             $i += 1;
         }
         else if ($numPad == 3 && $i < 10)
-        {
+        {          
             $newSel = $holding[0] + "00" + $i + $holding[1];
             rename($obj, $newSel);
         
             $i += 1;
         }
         else if ($numPad == 3 && 9 < $i < 100)
-        {
+        {          
             $newSel = $holding[0] + "0" + $i + $holding[1];
             rename($obj, $newSel);
         
             $i += 1;
         }
         else if ($numPad == 4 && $i < 10)
-        {
+        {            
             $newSel = $holding[0] + "000" + $i + $holding[1];
             rename($obj, $newSel);
         
             $i += 1;
         }
         else if ($numPad == 4 && 9 < $i < 100)
-        {
+        {           
             $newSel = $holding[0] + "00" + $i + $holding[1];
             rename($obj, $newSel);
         
             $i += 1;
         }
         else if ($numPad == 4 && 99 < $i < 1000)
-        {
+        {           
             $newSel = $holding[0] + "0" + $i + $holding[1];
             rename($obj, $newSel);
         
             $i += 1;
         }
         else
-        {
+        {            
             $newSel = $holding[0] + $i + $holding[1];
             rename($obj, $newSel);
         
             $i += 1;
         }
     }
-    print($numPad);
 }
