@@ -20,6 +20,3 @@ def JointCreator():
             print(joints)
             cmds.parent(jnt, joints[o])
         i += 1
-
-
-JointCreator()

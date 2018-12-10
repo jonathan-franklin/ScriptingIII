@@ -1,6 +1,7 @@
 import maya.cmds as cmds
 
-class LocatorTool():
+
+class LocatorTool:
     def __init__(self):
         self.mWin = 'LocWindow'
 
@@ -8,11 +9,11 @@ class LocatorTool():
         self.delete()
 
         self.mWin = cmds.window(self.mWin, title='Create Locator')
-        self.mCol = cmds.columnLayout(parent=self.mWin, adjustableColumn=True)
-        self.dropCtrl = cmds.optionMenuGrp(parent=self.mCol, label='Type')
-        cmds.menuItem(parent=self.dropCtrl, label='Bounding Box')
-        cmds.menuItem(parent=self.dropCtrl, label='Pivot Point')
-        cmds.button(parent=self.mCol, label='Create Locator',
+        self.mCol = cmds.columnLayout(adjustableColumn=True)
+        self.dropCtrl = cmds.optionMenuGrp(label='Type')
+        cmds.menuItem(label='Bounding Box')
+        cmds.menuItem(label='Pivot Point')
+        cmds.button(label='Create Locator',
                     c=lambda x: self.CreateLoc(cmds.optionMenu(self.dropCtrl, q=True, select=True)))
 
 
@@ -22,7 +23,7 @@ class LocatorTool():
         if cmds.window(self.mWin, exists=True):
             cmds.deleteUI(self.mWin)
 
-    def CreateLoc(option):
+    def CreateLoc(self, option):
         sels = cmds.ls( sl = True )
 
         if option is 1:
@@ -40,5 +41,3 @@ class LocatorTool():
                 pivot = cmds.xform(sel, q = True, rp = True, ws = True)
                 loc = cmds.spaceLocator()
                 cmds.xform(loc, translation = pivot, worldSpace = True)
-
-#CreateLoc(1)

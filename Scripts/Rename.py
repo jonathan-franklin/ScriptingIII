@@ -38,5 +38,3 @@ def Renamer(rename, numPad):
             newSel = holding[0] + "0" + str(i) + holding[1]
             cmds.rename(obj, newSel)
             i += 1
-
-Renamer('Left_#_Jnt', 2)
