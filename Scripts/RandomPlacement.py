@@ -30,3 +30,4 @@ class RandomPlacement:
         cmds.parent(world=True)
         cmds.select(selection, r=True)
         cmds.delete(selection)
+        cmds.delete(transforms)

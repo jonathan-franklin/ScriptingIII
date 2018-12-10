@@ -4,7 +4,7 @@ sys.path.append(r'C:\Users\jonat\Documents\maya\2018\scripts\MyScripts')
 from Rename import Renamer
 from CreateControls import MasterControlCreator
 from BoundingBox import LocatorTool
-from JointCreator import JointCreator
+from JointBuilder import JointCreator
 from RandomPlacement import RandomPlacement
 
 MCC = MasterControlCreator()
@@ -133,9 +133,9 @@ class Layout:
 
         # FK JOINT CREATOR SECTION
         cmds.frameLayout(label="Joint Creator")
-        cmds.columnLayout()
+        cmds.columnLayout(adjustableColumn=True)
         cmds.button(label='Create FK Joint Chain',
-                    c=lambda x: JointCreator())
+                    c=lambda x: JointCreator.ChainBuilder())
         cmds.setParent('..')
         cmds.setParent('..')
 
